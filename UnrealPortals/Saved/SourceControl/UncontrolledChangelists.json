@@ -1,0 +1,22 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset",
+				"C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/Materials/PortalMaterial.uasset",
+				"C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/Materials/TeleportMaterial.uasset",
+				"C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset",
+				"C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/DemoPortal.uasset",
+				"C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/DefaultPortal.uasset",
+				"C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/DemoPortal.uasset",
+				"C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/2/LK/IAQD6O32GX8FTXY10CHO43.uasset",
+				"C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/C/W0/UHKH9E74TYAP8H6WGESA2R.uasset",
+				"C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/MyPortal.uasset",
+				"C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/Portal.uasset"
+			]
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "UnrealPortals",
+			"Path": "..\\Source\\UnrealPortals.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "UnrealPortalsEditor",
+			"Path": "..\\Source\\UnrealPortalsEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

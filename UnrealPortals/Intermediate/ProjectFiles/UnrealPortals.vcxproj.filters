@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\UnrealPortals.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\UnrealPortals.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\UnrealPortalsEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\UnrealPortals">
+      <UniqueIdentifier>{59A18633-25E7-3427-B4C8-F0984902589B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\UnrealPortals\Portal.cpp">
+      <Filter>Source\UnrealPortals</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealPortals\Portal.h">
+      <Filter>Source\UnrealPortals</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UnrealPortals\PortalObjectComponent.cpp">
+      <Filter>Source\UnrealPortals</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealPortals\PortalObjectComponent.h">
+      <Filter>Source\UnrealPortals</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\UnrealPortals\UnrealPortals.Build.cs">
+      <Filter>Source\UnrealPortals</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\UnrealPortals\UnrealPortals.cpp">
+      <Filter>Source\UnrealPortals</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealPortals\UnrealPortals.h">
+      <Filter>Source\UnrealPortals</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UnrealPortals\UnrealPortalsCharacter.cpp">
+      <Filter>Source\UnrealPortals</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealPortals\UnrealPortalsCharacter.h">
+      <Filter>Source\UnrealPortals</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UnrealPortals\UnrealPortalsGameMode.cpp">
+      <Filter>Source\UnrealPortals</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealPortals\UnrealPortalsGameMode.h">
+      <Filter>Source\UnrealPortals</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

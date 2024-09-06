@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\david.silverman\\source\\unrealportals\\unrealportals\\source\\unrealportals\\portalobjectcomponent.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\david.silverman\\source\\unrealportals\\unrealportals\\intermediate\\build\\win64\\x64\\unrealportalseditor\\development\\engine\\sharedpch.engine.cpp17.h.pch",
+        "Includes": [
+            "c:\\users\\david.silverman\\source\\unrealportals\\unrealportals\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealportals\\definitions.unrealportals.h",
+            "c:\\users\\david.silverman\\source\\unrealportals\\unrealportals\\source\\unrealportals\\portalobjectcomponent.h",
+            "c:\\users\\david.silverman\\source\\unrealportals\\unrealportals\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealportals\\uht\\portalobjectcomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
