@@ -15,6 +15,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "Portal.generated.h"
 
+
 class UCameraComponent;
 class UMeshComponent;
 class UStaticMeshComponent;
@@ -23,6 +24,8 @@ class UCameraComponent;
 class UTransformComponent;
 class UArrowComponent;
 class UBoxComponent;
+
+#define PortalTrace ECC_GameTraceChannel1
 
 UCLASS()
 class UNREALPORTALS_API APortal : public AActor
