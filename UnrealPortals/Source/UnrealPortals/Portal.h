@@ -163,4 +163,7 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void initializeMaterials();
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void testPortal();
 };

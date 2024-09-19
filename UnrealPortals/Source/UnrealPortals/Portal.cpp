@@ -54,7 +54,7 @@ void APortal::Tick(float DeltaTime)
 
 	//checkScreen();
 
-	//shouldTeleport();
+	shouldTeleport();
 }
 
 FVector APortal::updatedCaptureLocation()
@@ -175,6 +175,7 @@ void APortal::shouldTeleport()
 {
 	// Might delete objs
 
+	/*
 	int portalNum = inPortal.Num() - 1;
 	int nearbyNum = inNearby.Num() - 1;
 
@@ -208,6 +209,7 @@ void APortal::shouldTeleport()
 	{
 
 	}
+	*/
 
 	/*GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("This is an on screen message!"));
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Some variable values: x: %f, y: %f"), x, y));*/

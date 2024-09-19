@@ -51,7 +51,7 @@ AUnrealPortalsCharacter::AUnrealPortalsCharacter()
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
 	FollowCamera->bOverrideAspectRatioAxisConstraint = true; // Makes the camera behave
-	FollowCamera->AspectRatioAxisConstraint = AspectRatio_MAX; // Check here https://youtu.be/goD3UZn7Yrg?si=nL25i3ZDKLH31vQp&t=830
+	FollowCamera->AspectRatioAxisConstraint = AspectRatio_MajorAxisFOV; // Check here https://youtu.be/goD3UZn7Yrg?si=nL25i3ZDKLH31vQp&t=830
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
