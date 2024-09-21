@@ -149,6 +149,7 @@ public:
 
 	void getOverlappingActorsWithPortalObj(UShapeComponent* basis, TArray<AActor*> &actorsToGive);
 
+	UFUNCTION(BlueprintCallable)
 	bool isPointCrossing(FVector point);
 
 	bool isPointCrossing(FVector point, UPortalObjectComponent* comp);

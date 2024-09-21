@@ -54,7 +54,9 @@ void APortal::Tick(float DeltaTime)
 
 	//checkScreen();
 
-	shouldTeleport();
+	//shouldTeleport();
+
+	testPortal();
 }
 
 FVector APortal::updatedCaptureLocation()
