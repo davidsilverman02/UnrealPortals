@@ -126,6 +126,10 @@ public:
 
 	FRotator updatedCaptureRotation(USceneComponent camManager);
 
+	FVector updatedLocation(FVector basePosition);
+
+	FRotator updatedRotation(FRotator baseRotation);
+
 	FVector getPortalLocation(FVector basePos);
 
 	FRotator getPortalRotation(FRotator baseRot);

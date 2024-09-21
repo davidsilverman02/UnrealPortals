@@ -121,6 +121,38 @@ FRotator APortal::updatedCaptureRotation(USceneComponent camManager)
 	return newRotation;
 }
 
+FVector APortal::updatedLocation(FVector basePosition)
+{
+	// Fix
+
+	// look at https://youtu.be/goD3UZn7Yrg?si=Zq-42_oSeIGRTsAm&t=549
+	FVector invSelf = AActor::GetActorTransform().GetScale3D();
+	invSelf.X *= -1.0;
+	invSelf.Y *= -1.0;
+	FTransform form(AActor::GetActorTransform().Rotator(), AActor::GetActorTransform().GetLocation(), invSelf);
+
+	FVector invert = UKismetMathLibrary::InverseTransformLocation(form, basePosition);
+
+	return UKismetMathLibrary::TransformLocation(otherPortal->GetActorTransform(), invert);
+
+	//return basePosition;
+}
+
+FRotator APortal::updatedRotation(FRotator baseRotation)
+{
+	// fix
+
+	FVector shiftedX, shiftedY, shiftedZ;
+	UKismetMathLibrary::BreakRotIntoAxes(baseRotation, shiftedX, shiftedY, shiftedZ);
+	shiftedX = shiftCamAxis(shiftedX);
+	shiftedY = shiftCamAxis(shiftedY);
+	shiftedZ = shiftCamAxis(shiftedZ);
+	FRotator newRotation = UKismetMathLibrary::MakeRotationFromAxes(shiftedX, shiftedY, shiftedZ);
+	return newRotation;
+
+	//return baseRotation;
+}
+
 FVector APortal::getPortalLocation(FVector basePos)
 {
 	FVector invSelf = AActor::GetActorTransform().GetScale3D();
