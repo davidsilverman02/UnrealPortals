@@ -171,4 +171,10 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent)
 	void testPortal();
+
+	UFUNCTION(BlueprintImplementableEvent)
+	void isntPortOb();
+
+	//UFUNCTION(BlueprintCallable)
+	//void teleportActor(AActor* teleported);
 };

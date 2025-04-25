@@ -62,6 +62,8 @@ void APortal::Tick(float DeltaTime)
 FVector APortal::updatedCaptureLocation()
 {
 	// look at https://youtu.be/goD3UZn7Yrg?si=Zq-42_oSeIGRTsAm&t=549
+
+	// Gets the transform of the actor but inverts its x and y scale
 	FVector invSelf = AActor::GetActorTransform().GetScale3D();
 	invSelf.X *= -1.0;
 	invSelf.Y *= -1.0;
@@ -69,6 +71,9 @@ FVector APortal::updatedCaptureLocation()
 
 	//implement in the blueprint
 	//look at https://youtu.be/goD3UZn7Yrg?si=aL5l7bF35ziHf7W9&t=590
+
+
+	// Returns the position of the camera, relative to the semi inverted scale of of the player camera
 	FVector posOfCam = UGameplayStatics::GetPlayerCameraManager(this, 0)->GetTransformComponent()->GetComponentLocation();
 
 	//FVector posOfCam = camManager.GetComponentLocation();
@@ -81,6 +86,8 @@ FVector APortal::updatedCaptureLocation()
 FVector APortal::updatedCaptureLocation(USceneComponent camManager)
 {
 	// look at https://youtu.be/goD3UZn7Yrg?si=Zq-42_oSeIGRTsAm&t=549
+
+	// Gets the transform of the actor but inverts its x and y scale
 	FVector invSelf = AActor::GetActorTransform().GetScale3D();
 	invSelf.X *= -1.0;
 	invSelf.Y *= -1.0;
@@ -90,6 +97,7 @@ FVector APortal::updatedCaptureLocation(USceneComponent camManager)
 	//look at https://youtu.be/goD3UZn7Yrg?si=aL5l7bF35ziHf7W9&t=590
 	//FVector posOfCam = UGameplayStatics::GetPlayerCameraManager(this, 0)->GetTransformComponent()->GetComponentLocation();
 
+	// Returns the position of the camera, relative to the semi inverted scale of of the player camera
 	FVector posOfCam = camManager.GetComponentLocation();
 
 	FVector invert = UKismetMathLibrary::InverseTransformLocation(form, posOfCam);
@@ -99,8 +107,11 @@ FVector APortal::updatedCaptureLocation(USceneComponent camManager)
 
 FRotator APortal::updatedCaptureRotation()
 {
+	// Gets the camera and produces its transforms, and produces 3 vectors to invert its position relative to the portal
 	FRotator baseRotation = UGameplayStatics::GetPlayerCameraManager(this, 0)->GetTransformComponent()->GetComponentRotation();
 	FVector shiftedX, shiftedY, shiftedZ;
+
+	// Places the camera axes into the shifted axes, shifts them relative to the camera, then returns a new camera rotation based on the rotation formed on the axes
 	UKismetMathLibrary::BreakRotIntoAxes(baseRotation, shiftedX, shiftedY, shiftedZ);
 	shiftedX = shiftCamAxis(shiftedX);
 	shiftedY = shiftCamAxis(shiftedY);
@@ -111,8 +122,11 @@ FRotator APortal::updatedCaptureRotation()
 
 FRotator APortal::updatedCaptureRotation(USceneComponent camManager)
 {
+	// Gets the camera and produces its transforms, and produces 3 vectors to invert its position relative to the portal
 	FRotator baseRotation = camManager.GetComponentRotation();
 	FVector shiftedX, shiftedY, shiftedZ;
+
+	// Places the camera axes into the shifted axes, shifts them relative to the camera, then returns a new camera rotation based on the rotation formed on the axes
 	UKismetMathLibrary::BreakRotIntoAxes(baseRotation, shiftedX, shiftedY, shiftedZ);
 	shiftedX = shiftCamAxis(shiftedX);
 	shiftedY = shiftCamAxis(shiftedY);
@@ -126,9 +140,13 @@ FVector APortal::updatedLocation(FVector basePosition)
 	// Fix
 
 	// look at https://youtu.be/goD3UZn7Yrg?si=Zq-42_oSeIGRTsAm&t=549
+
+	// Gets the transform of the actor but inverts its x and y scale
 	FVector invSelf = AActor::GetActorTransform().GetScale3D();
 	invSelf.X *= -1.0;
 	invSelf.Y *= -1.0;
+
+	// Returns the position of the camera, relative to the semi inverted scale of of the player camera
 	FTransform form(AActor::GetActorTransform().Rotator(), AActor::GetActorTransform().GetLocation(), invSelf);
 
 	FVector invert = UKismetMathLibrary::InverseTransformLocation(form, basePosition);
@@ -142,8 +160,11 @@ FRotator APortal::updatedRotation(FRotator baseRotation)
 {
 	// fix
 
+	// Gets the camera's rotator and produces its transforms, and produces 3 vectors to invert its position relative to the portal
 	FVector shiftedX, shiftedY, shiftedZ;
 	UKismetMathLibrary::BreakRotIntoAxes(baseRotation, shiftedX, shiftedY, shiftedZ);
+
+	// Places the camera axes into the shifted axes, shifts them relative to the camera, then returns a new camera rotation based on the rotation formed on the axes
 	shiftedX = shiftCamAxis(shiftedX);
 	shiftedY = shiftCamAxis(shiftedY);
 	shiftedZ = shiftCamAxis(shiftedZ);
@@ -155,6 +176,7 @@ FRotator APortal::updatedRotation(FRotator baseRotation)
 
 FVector APortal::getPortalLocation(FVector basePos)
 {
+
 	FVector invSelf = AActor::GetActorTransform().GetScale3D();
 	invSelf.X *= -1.0;
 	invSelf.Y *= -1.0;
@@ -172,6 +194,8 @@ FVector APortal::getPortalLocation(FVector basePos)
 
 FRotator APortal::getPortalRotation(FRotator baseRot)
 {
+	// Returns the r of the other portal relative to the portal, inverted for portal
+
 	FVector shiftedX, shiftedY, shiftedZ;
 	UKismetMathLibrary::BreakRotIntoAxes(baseRot, shiftedX, shiftedY, shiftedZ);
 	shiftedX = shiftCamAxis(shiftedX);
@@ -184,9 +208,18 @@ FRotator APortal::getPortalRotation(FRotator baseRot)
 void APortal::updateCapture()
 {
 	// study this https://youtu.be/goD3UZn7Yrg?si=XVBR4bEUtkOmUE-4&t=948
+
+	// use new functions
+
+	FVector posOfCam = UGameplayStatics::GetPlayerCameraManager(this, 0)->GetTransformComponent()->GetComponentLocation();
+	//FVector tes = updatedLocation(posOfCam);
+
+	FRotator rotOfCam = UGameplayStatics::GetPlayerCameraManager(this, 0)->GetTransformComponent()->GetComponentRotation();
+	//FRotator tas = updatedRotation(rotOfCam);
 	if (otherPortal)
 	{
-		otherPortal->portalCam->SetWorldLocationAndRotation(updatedCaptureLocation(), updatedCaptureRotation(), false);
+		//otherPortal->portalCam->SetWorldLocationAndRotation(updatedCaptureLocation(), updatedCaptureRotation(), false);
+		otherPortal->portalCam->SetWorldLocationAndRotation(updatedLocation(posOfCam), updatedRotation(rotOfCam), false);
 	}
 }
 
@@ -268,6 +301,7 @@ FVector APortal::shiftCamAxis(FVector axis)
 
 int APortal::truncatedQuality(float value)
 {
+	// Rounds decimal numbers down
 	return UKismetMathLibrary::FTrunc(value * portalQuality);
 }
 
@@ -275,12 +309,16 @@ FVector APortal::relativePortalForward()
 {
 	//Check here https://youtu.be/goD3UZn7Yrg?si=Rt73A2A5NaeVkT_i&t=1088
 
+	//  Returns the relative forward of the portal based on the space that it actally takes up
+
 	return (ForwardArrow->GetForwardVector() * portalClipBaseRange) + portalCollider->GetComponentTransform().GetLocation();
 }
 
 void APortal::getOverlappingActorsWithPortalObj(UShapeComponent* basis, TArray<AActor*> &actorsToGive)
 {
 	// if this doesn't work use blueprint
+
+	// Produces a list of the actors in the portal, and gives them various actions to do
 	TArray<AActor*> actorsToTake;
 
 	basis->GetOverlappingActors(actorsToTake, AActor::StaticClass());
@@ -300,6 +338,8 @@ void APortal::getOverlappingActorsWithPortalObj(UShapeComponent* basis, TArray<A
 
 bool APortal::isPointCrossing(FVector point)
 {
+
+	// Sees if a point is in front of a portal, checks if the point is intersecting the portal, and finally returns if the point is crossing
 	bool pointInFront;
 	bool isIntersecting;
 	bool isCrossing;
@@ -332,7 +372,9 @@ bool APortal::isPointCrossing(FVector point, UPortalObjectComponent* comp)
 
 void APortal::teleportActor(AActor* bod)
 {
-	
+	FVector newLocation = updatedLocation(bod->GetActorLocation());
+	FRotator newRotation = updatedRotation(bod->GetActorRotation());
+	//bod->SetActorLocationAndRotation()
 }
 
 // Functions for blueprint
@@ -344,6 +386,8 @@ void APortal::setPortalMaterial(UMaterial* baseMatter)
 
 void APortal::initializeMaterials()
 {
+	// sets up the materials of the portal to make sure they capture actors
+
 	SetTickGroup(TG_PostUpdateWork);
 
 	portalMatter = UMaterialInstanceDynamic::Create(portalBasis, this);
@@ -363,3 +407,17 @@ void APortal::initializeMaterials()
 
 	setupClipPlanes();
 }
+
+/*
+void APortal::teleportActor(AActor* teleported)
+{
+	UPortalObjectComponent* comp = teleported->GetComponentByClass<UPortalObjectComponent>();
+
+	if (comp)
+	{
+
+	}
+	else
+		isntPortOb();
+}
+*/
