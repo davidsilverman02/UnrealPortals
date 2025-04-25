@@ -20,6 +20,7 @@ class UMaterial;
 #define FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_35_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_35_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execmovePlayer); \
 	DECLARE_FUNCTION(execinitializeMaterials); \
 	DECLARE_FUNCTION(execsetPortalMaterial); \
 	DECLARE_FUNCTION(execisPointCrossing); \

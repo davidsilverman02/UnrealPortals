@@ -16486,3 +16486,209 @@ LogConfig: CVar [[LogNamedEventFilters:Frame *]] deferred - dummy variable creat
 [2025.04.25-18.04.38:744][870]Display: HotReload took  4.8s.
 [2025.04.25-18.04.38:745][870]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 3 classes unchanged
 [2025.04.25-18.05.09:856][686]LogViewport: Scene viewport resized to 564x337, mode Windowed.
+[2025.04.25-18.22.07:126][714]LogActor: Warning: DemoPortal_C /Engine/Transient.World_1:PersistentLevel.DemoPortal_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.22.08:543][791]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/PortalContent/PortalAssets/DemoPortal.DemoPortal
+[2025.04.25-18.22.08:543][791]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.25-18.22.08:544][791]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.25-18.22.08:765][791]LogActor: Warning: DemoPortal_C /Engine/Transient.World_10:PersistentLevel.DemoPortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.22.15:062][125]LogSlate: Window 'DemoPortal' being destroyed
+[2025.04.25-18.22.15:080][125]LogWorld: UWorld::CleanupWorld for World_10, bSessionEnded=true, bCleanupResources=true
+[2025.04.25-18.22.15:080][125]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.25-18.22.17:285][247]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.04.25-18.22.17:286][247]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.25-18.22.17:286][247]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.25-18.22.17:503][247]LogActor: Warning: BasePortal_C /Engine/Transient.World_11:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.24.38:853][887]LogDerivedDataCache: C:/Users/david.silverman/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:01.069 and deleted 0 files with total size 0 MiB and 8 empty folders. Scanned 816 files in 1411 folders with total size 77 MiB.
+[2025.04.25-18.24.48:610][916]LogAudioMixer: Warning: AudioMixerPlatformInterface Timeout [ 5 Seconds] waiting for h/w. InstanceID=1
+[2025.04.25-18.24.48:847][916]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=19448
+[2025.04.25-18.24.49:183][917]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{7a6c47e4-679c-4021-836e-fb3f2e581c4d}, Name=Speakers (Realtek(R) Audio)), Reason=AudioMixerPlatformInterface. Timeout waiting for h/w., InstanceID=1, DurationMS=133.50
+[2025.04.25-18.24.49:183][917]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2025.04.25-18.24.49:185][917]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2025.04.25-18.28.52:294][172]LogSlate: Window 'BasePortal' being destroyed
+[2025.04.25-18.28.52:338][172]LogWorld: UWorld::CleanupWorld for World_11, bSessionEnded=true, bCleanupResources=true
+[2025.04.25-18.28.52:338][172]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.25-18.28.54:740][311]Candidate modules for hot reload:
+[2025.04.25-18.28.54:740][311]  UnrealPortals
+[2025.04.25-18.28.54:746][311]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_5.3/Engine/Build/BatchFiles/Build.bat  -ModuleWithSuffix=UnrealPortals,2130 UnrealPortalsEditor Win64 Development -Project="C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/UnrealPortals.uproject" "C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/UnrealPortals.uproject"  -IgnoreJunk]
+[2025.04.25-18.28.54:751][311]Warning: Starting HotReload took  0.0s.
+[2025.04.25-18.29.03:146][775]CompilerResultsLog: New page: Compilation - Apr 25, 2025, 10:29:03 AM
+[2025.04.25-18.29.03:146][775]CompilerResultsLog: Using bundled DotNet SDK version: 6.0.302
+[2025.04.25-18.29.03:146][775]CompilerResultsLog: Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -ModuleWithSuffix=UnrealPortals,2130 UnrealPortalsEditor Win64 Development -Project="C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/UnrealPortals.uproject" "C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/UnrealPortals.uproject"  -IgnoreJunk
+[2025.04.25-18.29.03:146][775]CompilerResultsLog: Log file: C:\Users\david.silverman\AppData\Local\UnrealBuildTool\Log.txt
+[2025.04.25-18.29.03:146][775]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\david.silverman\source\UnrealPortals).
+[2025.04.25-18.29.03:146][775]CompilerResultsLog: Parsing headers for UnrealPortalsEditor
+[2025.04.25-18.29.03:146][775]CompilerResultsLog:   Running Internal UnrealHeaderTool C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\UnrealPortals.uproject C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\UnrealPortalsEditor\Development\UnrealPortalsEditor.uhtmanifest -WarningsAsErrors -installed
+[2025.04.25-18.29.03:146][775]CompilerResultsLog: Total of 2 written
+[2025.04.25-18.29.03:146][775]CompilerResultsLog: Reflection code generated for UnrealPortalsEditor in 1.8046508 seconds
+[2025.04.25-18.29.03:146][775]CompilerResultsLog: Building UnrealPortalsEditor...
+[2025.04.25-18.29.03:146][775]CompilerResultsLog: Using Visual Studio 2022 14.36.32542 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2025.04.25-18.29.03:146][775]CompilerResultsLog: [Upgrade]
+[2025.04.25-18.29.03:146][775]CompilerResultsLog: [Upgrade] Using backward-compatible build settings. The latest version of UE sets the following values by default, which may require code changes:
+[2025.04.25-18.29.03:146][775]CompilerResultsLog: [Upgrade]     bLegacyParentIncludePaths = false               => Omits module parent folders from include paths to reduce compiler command line length. (Previously: true).
+[2025.04.25-18.29.03:146][775]CompilerResultsLog: [Upgrade]     CppStandard = CppStandardVersion.Default        => Updates C++ Standard to C++20 (Previously: CppStandardVersion.Cpp17).
+[2025.04.25-18.29.03:147][775]CompilerResultsLog: [Upgrade]     WindowsPlatform.bStrictConformanceMode = true   => Updates MSVC strict conformance mode to true (Previously: false).
+[2025.04.25-18.29.03:147][775]CompilerResultsLog: [Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V4;' in UnrealPortalsEditor.Target.cs, and explicitly overriding settings that differ from the new defaults.
+[2025.04.25-18.29.03:147][775]CompilerResultsLog: [Upgrade]
+[2025.04.25-18.29.03:147][775]CompilerResultsLog: [Adaptive Build] Excluded from UnrealPortals unity file: Portal.cpp
+[2025.04.25-18.29.03:147][775]CompilerResultsLog: Determining max actions to execute in parallel (6 physical cores, 12 logical cores)
+[2025.04.25-18.29.03:147][775]CompilerResultsLog:   Executing up to 6 processes, one per physical core
+[2025.04.25-18.29.03:147][775]CompilerResultsLog: ------ Building 8 action(s) started ------
+[2025.04.25-18.29.03:147][775]CompilerResultsLog: [1/8] Compile [x64] UnrealPortals.init.gen.cpp
+[2025.04.25-18.29.03:147][775]CompilerResultsLog: [2/8] Compile [x64] PortalObjectComponent.cpp
+[2025.04.25-18.29.03:147][775]CompilerResultsLog: [3/8] Compile [x64] PortalObjectComponent.gen.cpp
+[2025.04.25-18.29.03:147][775]CompilerResultsLog: [4/8] Compile [x64] Portal.cpp
+[2025.04.25-18.29.03:147][775]CompilerResultsLog: [5/8] Compile [x64] Portal.gen.cpp
+[2025.04.25-18.29.03:147][775]CompilerResultsLog: [6/8] Link [x64] UnrealEditor-UnrealPortals-2130.lib
+[2025.04.25-18.29.03:147][775]CompilerResultsLog:    Creating library C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealEditor-UnrealPortals-2130.lib and object C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealEditor-UnrealPortals-2130.exp
+[2025.04.25-18.29.03:147][775]CompilerResultsLog: [7/8] Link [x64] UnrealEditor-UnrealPortals-2130.dll
+[2025.04.25-18.29.03:147][775]CompilerResultsLog:    Creating library C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealEditor-UnrealPortals-2130.sup.lib and object C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealEditor-UnrealPortals-2130.sup.exp
+[2025.04.25-18.29.03:147][775]CompilerResultsLog: [8/8] WriteMetadata UnrealPortalsEditor.target
+[2025.04.25-18.29.03:147][775]CompilerResultsLog: Total time in Parallel executor: 5.09 seconds
+[2025.04.25-18.29.03:147][775]CompilerResultsLog: Total execution time: 8.13 seconds
+[2025.04.25-18.29.03:147][775]LogMainFrame: MainFrame: Module compiling took 8.433 seconds
+[2025.04.25-18.29.03:241][775]LogUObjectHash: Compacting FUObjectHashTables data took   2.14ms
+[2025.04.25-18.29.03:282][775]LogClass: UPackage /Script/UnrealPortals Reload.
+[2025.04.25-18.29.03:282][775]LogClass: UClass Portal Reload.
+[2025.04.25-18.29.03:282][775]LogClass: Could not find existing class Portal in package /Script/UnrealPortals for reload, assuming new or modified class
+[2025.04.25-18.29.03:282][775]LogClass: Function getViewport is new or belongs to a modified class.
+[2025.04.25-18.29.03:282][775]LogClass: Function initializeMaterials is new or belongs to a modified class.
+[2025.04.25-18.29.03:282][775]LogClass: Function isPointCrossing is new or belongs to a modified class.
+[2025.04.25-18.29.03:282][775]LogClass: Function setPortalMaterial is new or belongs to a modified class.
+[2025.04.25-18.29.03:303][775]Re-instancing Portal after reload.
+[2025.04.25-18.29.03:317][775]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.29.03:319][775]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.29.03:321][775]LogActor: Warning: DemoPortal_C /Engine/Transient.World_1:PersistentLevel.DemoPortal_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.29.03:562][775]LogUObjectHash: Compacting FUObjectHashTables data took   3.01ms
+[2025.04.25-18.29.03:599][775]Display: HotReload took  8.9s.
+[2025.04.25-18.29.03:599][775]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 3 classes unchanged
+[2025.04.25-18.29.09:910][127]LogActor: Warning: DemoPortal_C /Engine/Transient.World_1:PersistentLevel.DemoPortal_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.29.21:485][817]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.04.25-18.29.21:485][817]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.25-18.29.21:485][817]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.25-18.29.21:712][817]LogActor: Warning: BasePortal_C /Engine/Transient.World_12:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.29.54:029][657]BlueprintLog: New page: Compile BasePortal
+[2025.04.25-18.29.54:045][657]LogActor: Warning: BasePortal_C /Engine/Transient.World_12:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.29.54:047][657]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.29.54:048][657]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.29.54:050][657]LogActor: Warning: DemoPortal_C /Engine/Transient.World_1:PersistentLevel.DemoPortal_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.29.54:135][657]LogUObjectHash: Compacting FUObjectHashTables data took   2.62ms
+[2025.04.25-18.29.54:982][701]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.25-18.29.55:061][701]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.04.25-18.29.55:061][701]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortal77F7FBB04C1255BBD29821AD029B073E.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.04.25-18.29.55:068][701]LogFileHelpers: InternalPromptForCheckoutAndSave took 87 ms (total: 178 ms)
+[2025.04.25-18.29.55:070][701]AssetCheck: New page: Asset Save: BasePortal
+[2025.04.25-18.29.55:070][701]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.04.25-18.29.56:451][780]LogSlate: Window 'BasePortal' being destroyed
+[2025.04.25-18.29.56:465][780]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2025.04.25-18.29.56:465][780]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.25-18.31.25:530][338]Candidate modules for hot reload:
+[2025.04.25-18.31.25:530][338]  UnrealPortals
+[2025.04.25-18.31.25:536][338]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_5.3/Engine/Build/BatchFiles/Build.bat  -ModuleWithSuffix=UnrealPortals,0225 UnrealPortalsEditor Win64 Development -Project="C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/UnrealPortals.uproject" "C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/UnrealPortals.uproject"  -IgnoreJunk]
+[2025.04.25-18.31.25:541][338]Warning: Starting HotReload took  0.0s.
+[2025.04.25-18.31.31:814][681]CompilerResultsLog: New page: Compilation - Apr 25, 2025, 10:31:31 AM
+[2025.04.25-18.31.31:814][681]CompilerResultsLog: Using bundled DotNet SDK version: 6.0.302
+[2025.04.25-18.31.31:814][681]CompilerResultsLog: Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -ModuleWithSuffix=UnrealPortals,0225 UnrealPortalsEditor Win64 Development -Project="C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/UnrealPortals.uproject" "C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/UnrealPortals.uproject"  -IgnoreJunk
+[2025.04.25-18.31.31:814][681]CompilerResultsLog: Log file: C:\Users\david.silverman\AppData\Local\UnrealBuildTool\Log.txt
+[2025.04.25-18.31.31:814][681]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\david.silverman\source\UnrealPortals).
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: Parsing headers for UnrealPortalsEditor
+[2025.04.25-18.31.31:815][681]CompilerResultsLog:   Running Internal UnrealHeaderTool C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\UnrealPortals.uproject C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\UnrealPortalsEditor\Development\UnrealPortalsEditor.uhtmanifest -WarningsAsErrors -installed
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: Total of 3 written
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: Reflection code generated for UnrealPortalsEditor in 1.5148475 seconds
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: Building UnrealPortalsEditor...
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: Using Visual Studio 2022 14.36.32542 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: [Upgrade]
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: [Upgrade] Using backward-compatible build settings. The latest version of UE sets the following values by default, which may require code changes:
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: [Upgrade]     bLegacyParentIncludePaths = false               => Omits module parent folders from include paths to reduce compiler command line length. (Previously: true).
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: [Upgrade]     CppStandard = CppStandardVersion.Default        => Updates C++ Standard to C++20 (Previously: CppStandardVersion.Cpp17).
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: [Upgrade]     WindowsPlatform.bStrictConformanceMode = true   => Updates MSVC strict conformance mode to true (Previously: false).
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: [Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V4;' in UnrealPortalsEditor.Target.cs, and explicitly overriding settings that differ from the new defaults.
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: [Upgrade]
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: [Adaptive Build] Excluded from UnrealPortals unity file: Portal.cpp
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: Determining max actions to execute in parallel (6 physical cores, 12 logical cores)
+[2025.04.25-18.31.31:815][681]CompilerResultsLog:   Executing up to 6 processes, one per physical core
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: ------ Building 6 action(s) started ------
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: [1/6] Compile [x64] UnrealPortals.init.gen.cpp
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: [2/6] Compile [x64] Portal.cpp
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: [3/6] Compile [x64] Portal.gen.cpp
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: [4/6] Link [x64] UnrealEditor-UnrealPortals-0225.lib
+[2025.04.25-18.31.31:815][681]CompilerResultsLog:    Creating library C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealEditor-UnrealPortals-0225.lib and object C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealEditor-UnrealPortals-0225.exp
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: [5/6] Link [x64] UnrealEditor-UnrealPortals-0225.dll
+[2025.04.25-18.31.31:815][681]CompilerResultsLog:    Creating library C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealEditor-UnrealPortals-0225.sup.lib and object C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealEditor-UnrealPortals-0225.sup.exp
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: Error: Portal.gen.cpp.obj : error LNK2019: unresolved external symbol "public: void __cdecl APortal::movePlayer(void)" (?movePlayer@APortal@@QEAAXXZ) referenced in function "public: static void __cdecl APortal::execmovePlayer(class UObject *,struct FFrame &,void * const)" (?execmovePlayer@APortal@@SAXPEAVUObject@@AEAUFFrame@@QEAX@Z)
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: Error: C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Binaries\Win64\UnrealEditor-UnrealPortals-0225.dll : fatal error LNK1120: 1 unresolved externals
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: Total time in Parallel executor: 3.33 seconds
+[2025.04.25-18.31.31:815][681]CompilerResultsLog: Total execution time: 6.02 seconds
+[2025.04.25-18.31.31:815][681]LogMainFrame: MainFrame: Module compiling took 6.304 seconds
+[2025.04.25-18.31.31:815][681]Warning: HotReload failed, recompile failed
+[2025.04.25-18.31.45:984][525]LogSlate: Window 'Message Log' being destroyed
+[2025.04.25-18.31.45:989][525]LogSlate: Window 'Message Log' being destroyed
+[2025.04.25-18.33.34:311][156]Candidate modules for hot reload:
+[2025.04.25-18.33.34:312][156]  UnrealPortals
+[2025.04.25-18.33.34:320][156]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_5.3/Engine/Build/BatchFiles/Build.bat  -ModuleWithSuffix=UnrealPortals,6050 UnrealPortalsEditor Win64 Development -Project="C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/UnrealPortals.uproject" "C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/UnrealPortals.uproject"  -IgnoreJunk]
+[2025.04.25-18.33.34:325][156]Warning: Starting HotReload took  0.0s.
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: New page: Compilation - Apr 25, 2025, 10:33:40 AM
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: Using bundled DotNet SDK version: 6.0.302
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -ModuleWithSuffix=UnrealPortals,6050 UnrealPortalsEditor Win64 Development -Project="C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/UnrealPortals.uproject" "C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/UnrealPortals.uproject"  -IgnoreJunk
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: Log file: C:\Users\david.silverman\AppData\Local\UnrealBuildTool\Log.txt
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\david.silverman\source\UnrealPortals).
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: Building UnrealPortalsEditor...
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: Using Visual Studio 2022 14.36.32542 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: [Upgrade]
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: [Upgrade] Using backward-compatible build settings. The latest version of UE sets the following values by default, which may require code changes:
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: [Upgrade]     bLegacyParentIncludePaths = false               => Omits module parent folders from include paths to reduce compiler command line length. (Previously: true).
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: [Upgrade]     CppStandard = CppStandardVersion.Default        => Updates C++ Standard to C++20 (Previously: CppStandardVersion.Cpp17).
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: [Upgrade]     WindowsPlatform.bStrictConformanceMode = true   => Updates MSVC strict conformance mode to true (Previously: false).
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: [Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V4;' in UnrealPortalsEditor.Target.cs, and explicitly overriding settings that differ from the new defaults.
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: [Upgrade]
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: [Adaptive Build] Excluded from UnrealPortals unity file: Portal.cpp
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: Determining max actions to execute in parallel (6 physical cores, 12 logical cores)
+[2025.04.25-18.33.40:343][492]CompilerResultsLog:   Executing up to 6 processes, one per physical core
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: ------ Building 4 action(s) started ------
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: [1/4] Compile [x64] Portal.cpp
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: [2/4] Link [x64] UnrealEditor-UnrealPortals-6050.lib
+[2025.04.25-18.33.40:343][492]CompilerResultsLog:    Creating library C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealEditor-UnrealPortals-6050.lib and object C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealEditor-UnrealPortals-6050.exp
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: [3/4] Link [x64] UnrealEditor-UnrealPortals-6050.dll
+[2025.04.25-18.33.40:343][492]CompilerResultsLog:    Creating library C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealEditor-UnrealPortals-6050.sup.lib and object C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealEditor-UnrealPortals-6050.sup.exp
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: [4/4] WriteMetadata UnrealPortalsEditor.target
+[2025.04.25-18.33.40:343][492]CompilerResultsLog: Total time in Parallel executor: 4.51 seconds
+[2025.04.25-18.33.40:344][492]CompilerResultsLog: Total execution time: 5.84 seconds
+[2025.04.25-18.33.40:344][492]LogMainFrame: MainFrame: Module compiling took 6.051 seconds
+[2025.04.25-18.33.40:399][492]LogUObjectHash: Compacting FUObjectHashTables data took   2.83ms
+[2025.04.25-18.33.40:448][492]LogClass: UPackage /Script/UnrealPortals Reload.
+[2025.04.25-18.33.40:448][492]LogClass: UClass Portal Reload.
+[2025.04.25-18.33.40:448][492]LogClass: Could not find existing class Portal in package /Script/UnrealPortals for reload, assuming new or modified class
+[2025.04.25-18.33.40:448][492]LogClass: Function getViewport is new or belongs to a modified class.
+[2025.04.25-18.33.40:449][492]LogClass: Function initializeMaterials is new or belongs to a modified class.
+[2025.04.25-18.33.40:449][492]LogClass: Function isPointCrossing is new or belongs to a modified class.
+[2025.04.25-18.33.40:449][492]LogClass: Function movePlayer is new or belongs to a modified class.
+[2025.04.25-18.33.40:449][492]LogClass: Function setPortalMaterial is new or belongs to a modified class.
+[2025.04.25-18.33.40:470][492]Re-instancing Portal after reload.
+[2025.04.25-18.33.40:491][492]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.33.40:493][492]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.33.40:495][492]LogActor: Warning: DemoPortal_C /Engine/Transient.World_1:PersistentLevel.DemoPortal_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.33.40:662][492]LogUObjectHash: Compacting FUObjectHashTables data took   2.11ms
+[2025.04.25-18.33.40:705][492]Display: HotReload took  6.4s.
+[2025.04.25-18.33.40:705][492]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 3 classes unchanged
+[2025.04.25-18.34.09:465][185]LogActor: Warning: DemoPortal_C /Engine/Transient.World_1:PersistentLevel.DemoPortal_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.34.11:059][276]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.04.25-18.34.11:060][276]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.25-18.34.11:060][276]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.25-18.34.11:295][276]LogActor: Warning: BasePortal_C /Engine/Transient.World_13:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.34.31:636][258]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.25-18.34.31:730][258]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.04.25-18.34.31:731][258]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortal685B3C0A465D045EAF64E28E88379340.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.04.25-18.34.31:744][258]LogFileHelpers: InternalPromptForCheckoutAndSave took 107 ms (total: 286 ms)
+[2025.04.25-18.34.31:746][258]AssetCheck: New page: Asset Save: BasePortal
+[2025.04.25-18.34.31:746][258]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.04.25-18.34.32:488][296]BlueprintLog: New page: Compile BasePortal
+[2025.04.25-18.34.32:515][296]LogActor: Warning: BasePortal_C /Engine/Transient.World_13:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.34.32:516][296]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.34.32:519][296]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.34.32:520][296]LogActor: Warning: DemoPortal_C /Engine/Transient.World_1:PersistentLevel.DemoPortal_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.25-18.34.32:617][296]LogUObjectHash: Compacting FUObjectHashTables data took   4.16ms
+[2025.04.25-18.36.47:945][361]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.25-18.36.48:028][361]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.04.25-18.36.48:028][361]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortal4A2EE7794712BF5C422ABAB03AA547E0.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.04.25-18.36.48:037][361]LogFileHelpers: InternalPromptForCheckoutAndSave took 92 ms (total: 378 ms)
+[2025.04.25-18.36.48:038][361]AssetCheck: New page: Asset Save: BasePortal
+[2025.04.25-18.36.48:038][361]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal

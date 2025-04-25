@@ -175,6 +175,10 @@ public:
 	UFUNCTION(BlueprintImplementableEvent)
 	void isntPortOb();
 
+	// This moves the player, will be replaced with a more permanent solution
+	UFUNCTION(BlueprintCallable)
+	void movePlayer();
+
 	//UFUNCTION(BlueprintCallable)
 	//void teleportActor(AActor* teleported);
 };

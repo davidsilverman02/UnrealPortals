@@ -372,8 +372,12 @@ bool APortal::isPointCrossing(FVector point, UPortalObjectComponent* comp)
 
 void APortal::teleportActor(AActor* bod)
 {
+	//gets the location and position of the actor in the cuurent portal, and translates it relative the other portal's perspective
 	FVector newLocation = updatedLocation(bod->GetActorLocation());
 	FRotator newRotation = updatedRotation(bod->GetActorRotation());
+	
+	// I need to place the teleportation code here, in the event it doesn't arrive, here it is
+
 	//bod->SetActorLocationAndRotation()
 }
 
@@ -421,3 +425,10 @@ void APortal::teleportActor(AActor* teleported)
 		isntPortOb();
 }
 */
+
+void APortal::movePlayer()
+{
+	// I need to get the player 
+
+	//teleportActor()
+}
