@@ -117,8 +117,14 @@ void EmptyLinkFunctionForGeneratedCodePortalObjectComponent() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPortalObjectComponent_OnTeleport_Statics::Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//void getPlayer();\n" },
+#endif
 		{ "DisplayName", "OnTeleport" },
 		{ "ModuleRelativePath", "PortalObjectComponent.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "void getPlayer();" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UPortalObjectComponent_OnTeleport_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPortalObjectComponent, nullptr, "OnTeleport", nullptr, nullptr, Z_Construct_UFunction_UPortalObjectComponent_OnTeleport_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UPortalObjectComponent_OnTeleport_Statics::PropPointers), sizeof(PortalObjectComponent_eventOnTeleport_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08820800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UPortalObjectComponent_OnTeleport_Statics::Function_MetaDataParams), Z_Construct_UFunction_UPortalObjectComponent_OnTeleport_Statics::Function_MetaDataParams) };
@@ -145,6 +151,12 @@ void EmptyLinkFunctionForGeneratedCodePortalObjectComponent() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_isPlayer_MetaData[];
+#endif
+		static void NewProp_isPlayer_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_isPlayer;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
@@ -156,7 +168,7 @@ void EmptyLinkFunctionForGeneratedCodePortalObjectComponent() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_UPortalObjectComponent_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UPortalObjectComponent_OnPortalEnterStart, "OnPortalEnterStart" }, // 3999807034
 		{ &Z_Construct_UFunction_UPortalObjectComponent_OnPortalExitStart, "OnPortalExitStart" }, // 1262398853
-		{ &Z_Construct_UFunction_UPortalObjectComponent_OnTeleport, "OnTeleport" }, // 1570243049
+		{ &Z_Construct_UFunction_UPortalObjectComponent_OnTeleport, "OnTeleport" }, // 2644592582
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UPortalObjectComponent_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -173,6 +185,20 @@ void EmptyLinkFunctionForGeneratedCodePortalObjectComponent() {}
 #endif
 	};
 #endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPortalObjectComponent_Statics::NewProp_isPlayer_MetaData[] = {
+		{ "Category", "PortalData" },
+		{ "ModuleRelativePath", "PortalObjectComponent.h" },
+	};
+#endif
+	void Z_Construct_UClass_UPortalObjectComponent_Statics::NewProp_isPlayer_SetBit(void* Obj)
+	{
+		((UPortalObjectComponent*)Obj)->isPlayer = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UPortalObjectComponent_Statics::NewProp_isPlayer = { "isPlayer", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UPortalObjectComponent), &Z_Construct_UClass_UPortalObjectComponent_Statics::NewProp_isPlayer_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UPortalObjectComponent_Statics::NewProp_isPlayer_MetaData), Z_Construct_UClass_UPortalObjectComponent_Statics::NewProp_isPlayer_MetaData) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UPortalObjectComponent_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UPortalObjectComponent_Statics::NewProp_isPlayer,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_UPortalObjectComponent_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UPortalObjectComponent>::IsAbstract,
 	};
@@ -182,15 +208,16 @@ void EmptyLinkFunctionForGeneratedCodePortalObjectComponent() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		FuncInfo,
-		nullptr,
+		Z_Construct_UClass_UPortalObjectComponent_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		UE_ARRAY_COUNT(FuncInfo),
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_UPortalObjectComponent_Statics::PropPointers),
 		0,
 		0x00B000A4u,
 		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UPortalObjectComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UPortalObjectComponent_Statics::Class_MetaDataParams)
 	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UPortalObjectComponent_Statics::PropPointers) < 2048);
 	UClass* Z_Construct_UClass_UPortalObjectComponent()
 	{
 		if (!Z_Registration_Info_UClass_UPortalObjectComponent.OuterSingleton)
@@ -210,9 +237,9 @@ void EmptyLinkFunctionForGeneratedCodePortalObjectComponent() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_PortalObjectComponent_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UPortalObjectComponent, UPortalObjectComponent::StaticClass, TEXT("UPortalObjectComponent"), &Z_Registration_Info_UClass_UPortalObjectComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPortalObjectComponent), 763235027U) },
+		{ Z_Construct_UClass_UPortalObjectComponent, UPortalObjectComponent::StaticClass, TEXT("UPortalObjectComponent"), &Z_Registration_Info_UClass_UPortalObjectComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UPortalObjectComponent), 2669222293U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_PortalObjectComponent_h_4268319900(TEXT("/Script/UnrealPortals"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_PortalObjectComponent_h_3670412850(TEXT("/Script/UnrealPortals"),
 		Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_PortalObjectComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_PortalObjectComponent_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -25,6 +25,9 @@ public:
 	FVector lastPos;
 	bool lastInFront;
 
+	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
+	bool isPlayer;
+
 	UPortalObjectComponent();
 
 protected:
@@ -36,6 +39,8 @@ public:
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 	virtual void Teleport(FTransform fromPortal, FTransform toPortal, FVector3f pos, FRotator rot);
+
+	//void getPlayer();
 
 	UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "OnTeleport"))
 	void OnTeleport(FTransform fromPortal, FTransform toPortal, FVector3f pos, FRotator rot);

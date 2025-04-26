@@ -16,6 +16,7 @@ void EmptyLinkFunctionForGeneratedCodeUnrealPortalsCharacter() {}
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 	UNREALPORTALS_API UClass* Z_Construct_UClass_AUnrealPortalsCharacter();
 	UNREALPORTALS_API UClass* Z_Construct_UClass_AUnrealPortalsCharacter_NoRegister();
+	UNREALPORTALS_API UClass* Z_Construct_UClass_UPortalObjectComponent_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_UnrealPortals();
 // End Cross Module References
 	void AUnrealPortalsCharacter::StaticRegisterNativesAUnrealPortalsCharacter()
@@ -56,6 +57,10 @@ void EmptyLinkFunctionForGeneratedCodeUnrealPortalsCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_LookAction_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_LookAction;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_PortalItem_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_PortalItem;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -158,6 +163,21 @@ void EmptyLinkFunctionForGeneratedCodeUnrealPortalsCharacter() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AUnrealPortalsCharacter_Statics::NewProp_LookAction = { "LookAction", nullptr, (EPropertyFlags)0x0040000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AUnrealPortalsCharacter, LookAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AUnrealPortalsCharacter_Statics::NewProp_LookAction_MetaData), Z_Construct_UClass_AUnrealPortalsCharacter_Statics::NewProp_LookAction_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AUnrealPortalsCharacter_Statics::NewProp_PortalItem_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Portal" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/** Is the portal component, all objects that can pass through portals need one */" },
+#endif
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "UnrealPortalsCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Is the portal component, all objects that can pass through portals need one" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AUnrealPortalsCharacter_Statics::NewProp_PortalItem = { "PortalItem", nullptr, (EPropertyFlags)0x00400000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AUnrealPortalsCharacter, PortalItem), Z_Construct_UClass_UPortalObjectComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AUnrealPortalsCharacter_Statics::NewProp_PortalItem_MetaData), Z_Construct_UClass_AUnrealPortalsCharacter_Statics::NewProp_PortalItem_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AUnrealPortalsCharacter_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnrealPortalsCharacter_Statics::NewProp_CameraBoom,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnrealPortalsCharacter_Statics::NewProp_FollowCamera,
@@ -165,6 +185,7 @@ void EmptyLinkFunctionForGeneratedCodeUnrealPortalsCharacter() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnrealPortalsCharacter_Statics::NewProp_JumpAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnrealPortalsCharacter_Statics::NewProp_MoveAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnrealPortalsCharacter_Statics::NewProp_LookAction,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AUnrealPortalsCharacter_Statics::NewProp_PortalItem,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AUnrealPortalsCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AUnrealPortalsCharacter>::IsAbstract,
@@ -204,9 +225,9 @@ void EmptyLinkFunctionForGeneratedCodeUnrealPortalsCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_UnrealPortalsCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AUnrealPortalsCharacter, AUnrealPortalsCharacter::StaticClass, TEXT("AUnrealPortalsCharacter"), &Z_Registration_Info_UClass_AUnrealPortalsCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AUnrealPortalsCharacter), 3403447113U) },
+		{ Z_Construct_UClass_AUnrealPortalsCharacter, AUnrealPortalsCharacter::StaticClass, TEXT("AUnrealPortalsCharacter"), &Z_Registration_Info_UClass_AUnrealPortalsCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AUnrealPortalsCharacter), 2104957890U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_UnrealPortalsCharacter_h_1958791723(TEXT("/Script/UnrealPortals"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_UnrealPortalsCharacter_h_920445886(TEXT("/Script/UnrealPortals"),
 		Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_UnrealPortalsCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_UnrealPortalsCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

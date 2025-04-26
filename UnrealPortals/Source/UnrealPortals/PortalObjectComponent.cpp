@@ -23,7 +23,6 @@ void UPortalObjectComponent::BeginPlay()
 	
 }
 
-
 // Called every frame
 void UPortalObjectComponent::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
