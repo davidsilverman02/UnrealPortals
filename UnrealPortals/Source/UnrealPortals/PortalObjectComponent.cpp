@@ -60,3 +60,13 @@ void UPortalObjectComponent::PortalExitStart()
 //{
 //	PortalExitStart();
 //}
+
+bool UPortalObjectComponent::getIsPlayer()
+{
+	return isPlayer;
+}
+
+void UPortalObjectComponent::setIsPlayer(bool newPlayer)
+{
+	isPlayer = newPlayer;
+}

@@ -55,7 +55,7 @@ AUnrealPortalsCharacter::AUnrealPortalsCharacter()
 	FollowCamera->AspectRatioAxisConstraint = AspectRatio_MajorAxisFOV; // Check here https://youtu.be/goD3UZn7Yrg?si=nL25i3ZDKLH31vQp&t=830
 
 	PortalItem = CreateDefaultSubobject<UPortalObjectComponent>(TEXT("PortalItem"));
-	PortalItem->isPlayer = true;
+	PortalItem->setIsPlayer(true);
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)

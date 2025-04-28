@@ -25,14 +25,14 @@ public:
 	FVector lastPos;
 	bool lastInFront;
 
-	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
-	bool isPlayer;
-
 	UPortalObjectComponent();
 
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
+
+	UPROPERTY(EditAnywhere, Category = "PortalData")
+	bool isPlayer;
 
 public:	
 	// Called every frame
@@ -54,4 +54,12 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "OnPortalExitStart"))
 	void OnPortalExitStart();
+
+	// The getter and setter functions for isPlayer
+
+	UFUNCTION(BlueprintCallable)
+	bool getIsPlayer();
+
+	UFUNCTION(BlueprintCallable)
+	void setIsPlayer(bool newPlayer);
 };
