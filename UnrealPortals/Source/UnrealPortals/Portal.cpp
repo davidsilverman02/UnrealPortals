@@ -378,8 +378,21 @@ void APortal::teleportActor(AActor* bod)
 	
 	// I need to place the teleportation code here, in the event it doesn't arrive, here it is
 
-	//bod->SetActorLocationAndRotation()
+	bod->SetActorLocationAndRotation(newLocation, newRotation, false);
 }
+
+
+void APortal::teleportActor(ACharacter* bod)
+{
+	//gets the location and position of the actor in the cuurent portal, and translates it relative the other portal's perspective
+	FVector newLocation = updatedLocation(bod->GetActorLocation());
+	FRotator newRotation = updatedRotation(bod->GetActorRotation());
+
+	// I need to place the teleportation code here, in the event it doesn't arrive, here it is
+
+	bod->SetActorLocationAndRotation(newLocation, newRotation, false);
+}
+
 
 // Functions for blueprint
 
@@ -430,5 +443,20 @@ void APortal::movePlayer()
 {
 	// I need to get the player 
 
-	//teleportActor()
+	teleportActor(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+
+
+	// as the player is moved, it means the player's movement needs to be rotated, which this is a demo of
+
+	bool needsRotation = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetComponentByClass<UPortalObjectComponent>()->getIsPlayer();
+
+	if (needsRotation)
+	{
+		// rotates the player's movement to account for teleportation
+		FRotator newRotation = updatedRotation(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetControlRotation());
+		
+		//UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->
+
+		//UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->SetControlRotation(newRotation);
+	}
 }

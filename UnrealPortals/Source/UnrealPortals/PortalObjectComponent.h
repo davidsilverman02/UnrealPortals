@@ -4,6 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "GameFramework/Actor.h"
+#include "GameFramework/Character.h"
+#include "GameFramework/Controller.h"
 #include "PortalObjectComponent.generated.h"
 
 //struct FTransform;
@@ -40,8 +43,6 @@ public:
 
 	virtual void Teleport(FTransform fromPortal, FTransform toPortal, FVector3f pos, FRotator rot);
 
-	//void getPlayer();
-
 	UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "OnTeleport"))
 	void OnTeleport(FTransform fromPortal, FTransform toPortal, FVector3f pos, FRotator rot);
 
@@ -62,4 +63,7 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void setIsPlayer(bool newPlayer);
+
+	// is needed to getPlayer
+	//void turnPlayer();
 };

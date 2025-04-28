@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "GameFramework/Character.h"
+#include "GameFramework/Controller.h"
 #include "PortalObjectComponent.h"
 #include "Components/ArrowComponent.h"
 #include "Components/BoxComponent.h"
@@ -159,6 +161,8 @@ public:
 	bool isPointCrossing(FVector point, UPortalObjectComponent* comp);
 
 	void teleportActor(AActor* bod);
+
+	void teleportActor(ACharacter* bod);
 
 
 	//Blueprint called functions
