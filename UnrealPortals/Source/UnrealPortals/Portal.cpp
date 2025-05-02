@@ -441,7 +441,7 @@ void APortal::teleportActor(AActor* teleported)
 
 void APortal::movePlayer()
 {
-	// I need to get the player 
+	// I need to get the player, and teleport them
 
 	teleportActor(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
 
@@ -454,9 +454,11 @@ void APortal::movePlayer()
 	{
 		// rotates the player's movement to account for teleportation
 		FRotator newRotation = updatedRotation(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetControlRotation());
-		
-		//UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->
 
-		//UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->SetControlRotation(newRotation);
+		// sets player control rotation, 0 is player id
+		UGameplayStatics::GetPlayerController(GetWorld(), 0)->SetControlRotation(newRotation);
+
+		// cuts the camera from players, 0 is player id
+		UGameplayStatics::GetPlayerCameraManager(GetWorld(), 0)->SetGameCameraCutThisFrame();
 	}
 }
