@@ -164,6 +164,7 @@ public:
 
 	void teleportActor(ACharacter* bod);
 
+	FVector translateVelocity(FVector initialVelo);
 
 	//Blueprint called functions
 	

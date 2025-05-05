@@ -225,9 +225,12 @@ void APortal::updateCapture()
 
 void APortal::checkScreen()
 {
-	if (!(rendTarg->SizeX == truncatedQuality(getViewport().X) && rendTarg->SizeY == truncatedQuality(getViewport().Y)))
+	if (rendTarg)
 	{
-		UKismetRenderingLibrary::ResizeRenderTarget2D(rendTarg, truncatedQuality(getViewport().X), truncatedQuality(getViewport().Y));
+		if (!(rendTarg->SizeX == truncatedQuality(getViewport().X) && rendTarg->SizeY == truncatedQuality(getViewport().Y)))
+		{
+			UKismetRenderingLibrary::ResizeRenderTarget2D(rendTarg, truncatedQuality(getViewport().X), truncatedQuality(getViewport().Y));
+		}
 	}
 }
 
@@ -393,6 +396,17 @@ void APortal::teleportActor(ACharacter* bod)
 	bod->SetActorLocationAndRotation(newLocation, newRotation, false);
 }
 
+FVector APortal::translateVelocity(FVector initialVelo)
+{
+	// Transposes a velocity relative to another portal
+
+	FVector newDir = UKismetMathLibrary::InverseTransformDirection(AActor::GetTransform(), initialVelo);
+	FVector xMirror = UKismetMathLibrary::MirrorVectorByNormal(newDir, FVector::ForwardVector);
+	FVector yMirror = UKismetMathLibrary::MirrorVectorByNormal(newDir, FVector::RightVector);
+	FVector translMirror = UKismetMathLibrary::TransformDirection(otherPortal->GetTransform(), yMirror);
+
+	return translMirror * initialVelo.Length();
+}
 
 // Functions for blueprint
 
