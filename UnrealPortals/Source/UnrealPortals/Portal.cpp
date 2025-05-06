@@ -482,7 +482,5 @@ void APortal::movePlayer()
 
 	// sets the velocity of the travelling object to it's original velocity
 
-
-
-	//UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetCharacterMovement()->Velocity = originSpd;
+	comp->setVelocity(translateVelocity(originSpd)); 
 }

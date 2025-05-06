@@ -10463,3 +10463,4 @@ LogConfig: CVar [[con.DebugLateDefault:1]] deferred - dummy variable created
 [2025.05.06-17.48.47:728][299]LogSlate: Window 'SM_ChamferCube' being destroyed
 [2025.05.06-17.48.47:827][299]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
 [2025.05.06-17.48.47:827][299]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.05.06-18.04.02:882][606]LogDerivedDataCache: C:/Users/david.silverman/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:01.086 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 837 files in 1440 folders with total size 77 MiB.
