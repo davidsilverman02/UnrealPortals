@@ -455,12 +455,16 @@ void APortal::teleportActor(AActor* teleported)
 
 void APortal::movePlayer()
 {
+	// Gets the original velocity of the entering object
+	FVector originSpd = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetVelocity();
+
 	// I need to get the player, and teleport them
 
 	teleportActor(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
 
-
 	// as the player is moved, it means the player's movement needs to be rotated, which this is a demo of
+
+	UPortalObjectComponent* comp = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetComponentByClass<UPortalObjectComponent>();
 
 	bool needsRotation = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetComponentByClass<UPortalObjectComponent>()->getIsPlayer();
 
@@ -475,4 +479,10 @@ void APortal::movePlayer()
 		// cuts the camera from players, 0 is player id
 		UGameplayStatics::GetPlayerCameraManager(GetWorld(), 0)->SetGameCameraCutThisFrame();
 	}
+
+	// sets the velocity of the travelling object to it's original velocity
+
+
+
+	//UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetCharacterMovement()->Velocity = originSpd;
 }

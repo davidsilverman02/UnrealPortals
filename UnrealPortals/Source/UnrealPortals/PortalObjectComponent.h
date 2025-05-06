@@ -7,6 +7,7 @@
 #include "GameFramework/Actor.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/Controller.h"
+#include "GameFramework/MovementComponent.h"
 #include "PortalObjectComponent.generated.h"
 
 //struct FTransform;
@@ -63,6 +64,8 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void setIsPlayer(bool newPlayer);
+
+	void setVelocity(FVector newSpd);
 
 	// is needed to getPlayer
 	//void turnPlayer();

@@ -70,3 +70,11 @@ void UPortalObjectComponent::setIsPlayer(bool newPlayer)
 {
 	isPlayer = newPlayer;
 }
+
+void UPortalObjectComponent::setVelocity(FVector newSpd)
+{
+
+	// Meant to set velocity of attached object to newSpd
+
+	GetOwner()->GetRootComponent()->ComponentVelocity = newSpd;
+}
