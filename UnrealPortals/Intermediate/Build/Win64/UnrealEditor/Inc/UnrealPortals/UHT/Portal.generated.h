@@ -23,6 +23,8 @@ class UMaterial;
 	DECLARE_FUNCTION(execmovePlayer); \
 	DECLARE_FUNCTION(execinitializeMaterials); \
 	DECLARE_FUNCTION(execsetPortalMaterial); \
+	DECLARE_FUNCTION(execteleSync); \
+	DECLARE_FUNCTION(execsyncPortals); \
 	DECLARE_FUNCTION(execisPointCrossing); \
 	DECLARE_FUNCTION(execgetViewport);
 

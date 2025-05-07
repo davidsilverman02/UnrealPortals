@@ -415,6 +415,38 @@ void APortal::syncPortals(bool syncState)
 	otherPortal->syncedCam = syncState;
 }
 
+
+void APortal::teleSync()
+{
+	// changes the relative vision of the camera to the player teleporting
+
+	if (syncedCam)
+	{
+		syncPortals(false);
+
+		//Meant to set the camera targeting of the player controller to the portal
+
+		UGameplayStatics::GetPlayerController(GetWorld(), 0)->SetViewTargetWithBlend(this);
+	}
+	else
+	{
+		syncPortals(true);
+
+		UGameplayStatics::GetPlayerController(GetWorld(), 0)->SetViewTargetWithBlend(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+	}
+}
+
+void APortal::nearbySync()
+{
+
+}
+
+
+
+
+
+
+
 // Functions for blueprint
 
 void APortal::setPortalMaterial(UMaterial* baseMatter)

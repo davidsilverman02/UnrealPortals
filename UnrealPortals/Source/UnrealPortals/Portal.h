@@ -173,6 +173,13 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void syncPortals(bool syncState);
 
+	UFUNCTION(BlueprintCallable)
+	void teleSync();
+
+	UFUNCTION(BlueprintCallable)
+	void nearbySync();
+
+
 	//Blueprint called functions
 	
 	UFUNCTION(BlueprintCallable)

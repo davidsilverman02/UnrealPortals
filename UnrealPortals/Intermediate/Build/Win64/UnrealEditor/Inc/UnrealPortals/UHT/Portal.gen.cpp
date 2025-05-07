@@ -48,6 +48,21 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		P_THIS->setPortalMaterial(Z_Param_baseMatter);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(APortal::execteleSync)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->teleSync();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(APortal::execsyncPortals)
+	{
+		P_GET_UBOOL(Z_Param_syncState);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->syncPortals(Z_Param_syncState);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(APortal::execisPointCrossing)
 	{
 		P_GET_STRUCT(FVector,Z_Param_point);
@@ -82,6 +97,8 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 			{ "isPointCrossing", &APortal::execisPointCrossing },
 			{ "movePlayer", &APortal::execmovePlayer },
 			{ "setPortalMaterial", &APortal::execsetPortalMaterial },
+			{ "syncPortals", &APortal::execsyncPortals },
+			{ "teleSync", &APortal::execteleSync },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -274,6 +291,67 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_APortal_syncPortals_Statics
+	{
+		struct Portal_eventsyncPortals_Parms
+		{
+			bool syncState;
+		};
+		static void NewProp_syncState_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_syncState;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	void Z_Construct_UFunction_APortal_syncPortals_Statics::NewProp_syncState_SetBit(void* Obj)
+	{
+		((Portal_eventsyncPortals_Parms*)Obj)->syncState = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_APortal_syncPortals_Statics::NewProp_syncState = { "syncState", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(Portal_eventsyncPortals_Parms), &Z_Construct_UFunction_APortal_syncPortals_Statics::NewProp_syncState_SetBit, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APortal_syncPortals_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APortal_syncPortals_Statics::NewProp_syncState,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APortal_syncPortals_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Portal.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APortal_syncPortals_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APortal, nullptr, "syncPortals", nullptr, nullptr, Z_Construct_UFunction_APortal_syncPortals_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_syncPortals_Statics::PropPointers), sizeof(Z_Construct_UFunction_APortal_syncPortals_Statics::Portal_eventsyncPortals_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_syncPortals_Statics::Function_MetaDataParams), Z_Construct_UFunction_APortal_syncPortals_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_syncPortals_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_APortal_syncPortals_Statics::Portal_eventsyncPortals_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_APortal_syncPortals()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APortal_syncPortals_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_APortal_teleSync_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APortal_teleSync_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Portal.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APortal_teleSync_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APortal, nullptr, "teleSync", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_teleSync_Statics::Function_MetaDataParams), Z_Construct_UFunction_APortal_teleSync_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_APortal_teleSync()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APortal_teleSync_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_APortal_testPortal_Statics
 	{
 #if WITH_METADATA
@@ -401,6 +479,8 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		{ &Z_Construct_UFunction_APortal_isPointCrossing, "isPointCrossing" }, // 605872824
 		{ &Z_Construct_UFunction_APortal_movePlayer, "movePlayer" }, // 1921698282
 		{ &Z_Construct_UFunction_APortal_setPortalMaterial, "setPortalMaterial" }, // 2030455649
+		{ &Z_Construct_UFunction_APortal_syncPortals, "syncPortals" }, // 203586671
+		{ &Z_Construct_UFunction_APortal_teleSync, "teleSync" }, // 91501455
 		{ &Z_Construct_UFunction_APortal_testPortal, "testPortal" }, // 2137945007
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_APortal_Statics::FuncInfo) < 2048);
@@ -641,9 +721,9 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APortal, APortal::StaticClass, TEXT("APortal"), &Z_Registration_Info_UClass_APortal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortal), 1209710268U) },
+		{ Z_Construct_UClass_APortal, APortal::StaticClass, TEXT("APortal"), &Z_Registration_Info_UClass_APortal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortal), 410253964U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_1152102418(TEXT("/Script/UnrealPortals"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_3158880431(TEXT("/Script/UnrealPortals"),
 		Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
