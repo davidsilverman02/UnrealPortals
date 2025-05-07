@@ -103,6 +103,10 @@ public:
 	TArray<AActor*> inPortal;
 
 	TArray<AActor*> inNearby;
+	
+	// the bool for the function
+	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
+	bool syncedCam;
 
 	// May want to put this in portal object component
 	FVector lastPos;
@@ -165,6 +169,9 @@ public:
 	void teleportActor(ACharacter* bod);
 
 	FVector translateVelocity(FVector initialVelo);
+
+	UFUNCTION(BlueprintCallable)
+	void syncPortals(bool syncState);
 
 	//Blueprint called functions
 	

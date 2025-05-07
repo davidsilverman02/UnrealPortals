@@ -408,6 +408,13 @@ FVector APortal::translateVelocity(FVector initialVelo)
 	return translMirror * initialVelo.Length();
 }
 
+
+void APortal::syncPortals(bool syncState)
+{
+	syncedCam = syncState;
+	otherPortal->syncedCam = syncState;
+}
+
 // Functions for blueprint
 
 void APortal::setPortalMaterial(UMaterial* baseMatter)
@@ -456,7 +463,7 @@ void APortal::teleportActor(AActor* teleported)
 void APortal::movePlayer()
 {
 	// Gets the original velocity of the entering object
-	FVector originSpd = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetVelocity();
+	
 
 	// I need to get the player, and teleport them
 
@@ -479,6 +486,8 @@ void APortal::movePlayer()
 		// cuts the camera from players, 0 is player id
 		UGameplayStatics::GetPlayerCameraManager(GetWorld(), 0)->SetGameCameraCutThisFrame();
 	}
+
+	FVector originSpd = UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetVelocity();
 
 	// sets the velocity of the travelling object to it's original velocity
 

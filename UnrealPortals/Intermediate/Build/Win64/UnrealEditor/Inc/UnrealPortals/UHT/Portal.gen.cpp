@@ -380,6 +380,11 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_rendTarg_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_rendTarg;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_syncedCam_MetaData[];
+#endif
+		static void NewProp_syncedCam_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_syncedCam;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -560,6 +565,23 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APortal_Statics::NewProp_rendTarg = { "rendTarg", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APortal, rendTarg), Z_Construct_UClass_UTextureRenderTarget2D_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APortal_Statics::NewProp_rendTarg_MetaData), Z_Construct_UClass_APortal_Statics::NewProp_rendTarg_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APortal_Statics::NewProp_syncedCam_MetaData[] = {
+		{ "Category", "PortalData" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// the bool for the function\n" },
+#endif
+		{ "ModuleRelativePath", "Portal.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "the bool for the function" },
+#endif
+	};
+#endif
+	void Z_Construct_UClass_APortal_Statics::NewProp_syncedCam_SetBit(void* Obj)
+	{
+		((APortal*)Obj)->syncedCam = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_APortal_Statics::NewProp_syncedCam = { "syncedCam", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(APortal), &Z_Construct_UClass_APortal_Statics::NewProp_syncedCam_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APortal_Statics::NewProp_syncedCam_MetaData), Z_Construct_UClass_APortal_Statics::NewProp_syncedCam_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APortal_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortal_Statics::NewProp_defaultComp,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortal_Statics::NewProp_portalCollider,
@@ -579,6 +601,7 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortal_Statics::NewProp_portalClipBaseRange,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortal_Statics::NewProp_portalMatter,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortal_Statics::NewProp_rendTarg,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APortal_Statics::NewProp_syncedCam,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APortal_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APortal>::IsAbstract,
@@ -618,9 +641,9 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APortal, APortal::StaticClass, TEXT("APortal"), &Z_Registration_Info_UClass_APortal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortal), 3164117160U) },
+		{ Z_Construct_UClass_APortal, APortal::StaticClass, TEXT("APortal"), &Z_Registration_Info_UClass_APortal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortal), 1209710268U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_3667125040(TEXT("/Script/UnrealPortals"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_1152102418(TEXT("/Script/UnrealPortals"),
 		Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
