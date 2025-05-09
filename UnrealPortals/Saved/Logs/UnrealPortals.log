@@ -1329,3 +1329,8 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2025.05.09-18.06.45:916][662]LogSlate: Window 'BasePortal' being destroyed
 [2025.05.09-18.06.45:928][662]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
 [2025.05.09-18.06.45:928][662]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.05.09-18.20.42:251][801]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.09-18.20.42:252][801]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.05.09-18.20.42:252][801]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.05.09-18.20.42:482][801]LogActor: Warning: BasePortal_C /Engine/Transient.World_6:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.09-18.20.50:516][182]LogViewport: Scene viewport resized to 781x647, mode Windowed.

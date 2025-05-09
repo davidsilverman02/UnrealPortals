@@ -97,6 +97,9 @@ public:
 	float portalClipBaseRange = -3.0f;
 
 	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
+	float portalCamDist = 1000.0f;
+
+	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
 	UMaterialInstanceDynamic* portalMatter;
 
 	UPROPERTY(BlueprintReadWrite, Category = "PortalData")

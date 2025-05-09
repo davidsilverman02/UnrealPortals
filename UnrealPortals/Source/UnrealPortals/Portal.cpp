@@ -449,13 +449,31 @@ void APortal::nearbySync()
 	if (syncedCam)
 	{
 		// Sees if the player and the camera traces through the portal
-		bool mogus = GetWorld()->UWorld::LineTraceSingleByChannel(returnNat, UGameplayStatics::GetPlayerCameraManager(GetWorld(), 0)->GetCameraLocation(), UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetActorLocation(), ECC_GameTraceChannel1, ignoParam);
+		bool intersect = GetWorld()->UWorld::LineTraceSingleByChannel(returnNat, UGameplayStatics::GetPlayerCameraManager(GetWorld(), 0)->GetCameraLocation(), UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetActorLocation(), ECC_GameTraceChannel1, ignoParam);
 
-		// now add other things
+		// checks the trace itself
+		if (returnNat.GetComponent() == intersectionCollider)
+		{
+			syncPortals(false);
+
+			//Meant to set the camera targeting of the player controller to the player
+
+			UGameplayStatics::GetPlayerController(GetWorld(), 0)->SetViewTargetWithBlend(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+		}
 	}
 	else
 	{
+		// Gets a projection of the camera forward
+		FVector camProject = (UGameplayStatics::GetPlayerCameraManager(GetWorld(), 0)->GetActorForwardVector() * portalCamDist) + UGameplayStatics::GetPlayerCameraManager(GetWorld(), 0)->GetCameraLocation();
 
+		// Sees if the camera traces through the portal
+		bool intersect = GetWorld()->UWorld::LineTraceSingleByChannel(returnNat, UGameplayStatics::GetPlayerCameraManager(GetWorld(), 0)->GetCameraLocation(), camProject, ECC_GameTraceChannel1, ignoParam);
+
+		// checks the trace itself
+		if (returnNat.GetComponent() != otherPortal->intersectionCollider)
+		{
+			syncPortals(true);
+		}
 	}
 }
 
