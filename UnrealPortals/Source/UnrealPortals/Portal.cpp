@@ -438,7 +438,25 @@ void APortal::teleSync()
 
 void APortal::nearbySync()
 {
+	FHitResult returnNat;
 
+	// has the player ignored by the line trace
+	FCollisionQueryParams ignoParam;
+	ignoParam.AddIgnoredActor(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+
+	
+
+	if (syncedCam)
+	{
+		// Sees if the player and the camera traces through the portal
+		bool mogus = GetWorld()->UWorld::LineTraceSingleByChannel(returnNat, UGameplayStatics::GetPlayerCameraManager(GetWorld(), 0)->GetCameraLocation(), UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetActorLocation(), ECC_GameTraceChannel1, ignoParam);
+
+		// now add other things
+	}
+	else
+	{
+
+	}
 }
 
 

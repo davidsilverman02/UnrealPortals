@@ -27,7 +27,9 @@ class UTransformComponent;
 class UArrowComponent;
 class UBoxComponent;
 
-#define PortalTrace ECC_GameTraceChannel1
+
+// The first trace channel made in this project was the Portal channel, I believe this will work for channel one thusly
+#define Portal ECC_GameTraceChannel1
 
 UCLASS()
 class UNREALPORTALS_API APortal : public AActor

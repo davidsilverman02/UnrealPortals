@@ -48,6 +48,13 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		P_THIS->setPortalMaterial(Z_Param_baseMatter);
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(APortal::execnearbySync)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->nearbySync();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(APortal::execteleSync)
 	{
 		P_FINISH;
@@ -96,6 +103,7 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 			{ "initializeMaterials", &APortal::execinitializeMaterials },
 			{ "isPointCrossing", &APortal::execisPointCrossing },
 			{ "movePlayer", &APortal::execmovePlayer },
+			{ "nearbySync", &APortal::execnearbySync },
 			{ "setPortalMaterial", &APortal::execsetPortalMaterial },
 			{ "syncPortals", &APortal::execsyncPortals },
 			{ "teleSync", &APortal::execteleSync },
@@ -248,6 +256,28 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APortal_movePlayer_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_APortal_nearbySync_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APortal_nearbySync_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Portal.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APortal_nearbySync_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APortal, nullptr, "nearbySync", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_nearbySync_Statics::Function_MetaDataParams), Z_Construct_UFunction_APortal_nearbySync_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_APortal_nearbySync()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APortal_nearbySync_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -478,6 +508,7 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		{ &Z_Construct_UFunction_APortal_isntPortOb, "isntPortOb" }, // 1934380805
 		{ &Z_Construct_UFunction_APortal_isPointCrossing, "isPointCrossing" }, // 605872824
 		{ &Z_Construct_UFunction_APortal_movePlayer, "movePlayer" }, // 1921698282
+		{ &Z_Construct_UFunction_APortal_nearbySync, "nearbySync" }, // 1099017609
 		{ &Z_Construct_UFunction_APortal_setPortalMaterial, "setPortalMaterial" }, // 2030455649
 		{ &Z_Construct_UFunction_APortal_syncPortals, "syncPortals" }, // 203586671
 		{ &Z_Construct_UFunction_APortal_teleSync, "teleSync" }, // 91501455
@@ -721,9 +752,9 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APortal, APortal::StaticClass, TEXT("APortal"), &Z_Registration_Info_UClass_APortal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortal), 410253964U) },
+		{ Z_Construct_UClass_APortal, APortal::StaticClass, TEXT("APortal"), &Z_Registration_Info_UClass_APortal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortal), 3348386021U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_3158880431(TEXT("/Script/UnrealPortals"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_2982198446(TEXT("/Script/UnrealPortals"),
 		Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
