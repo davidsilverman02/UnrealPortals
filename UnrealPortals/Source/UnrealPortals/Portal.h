@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 #include "GameFramework/Character.h"
 #include "GameFramework/Controller.h"
+#include "UnrealPortalsCharacter.h"
 #include "PortalObjectComponent.h"
 #include "Components/ArrowComponent.h"
 #include "Components/BoxComponent.h"

@@ -1149,3 +1149,4 @@ LogConfig: CVar [[LogNamedEventFilters:Frame *]] deferred - dummy variable creat
 [2025.05.12-18.11.42:836][684]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{7a6c47e4-679c-4021-836e-fb3f2e581c4d}, Name=Speakers (Realtek(R) Audio)), Reason=AudioMixerPlatformInterface. Timeout waiting for h/w., InstanceID=1, DurationMS=40.18
 [2025.05.12-18.11.42:843][684]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
 [2025.05.12-18.11.42:845][684]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2025.05.12-18.23.04:360][951]LogDerivedDataCache: C:/Users/david.silverman/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:01.063 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 854 files in 1467 folders with total size 78 MiB.
