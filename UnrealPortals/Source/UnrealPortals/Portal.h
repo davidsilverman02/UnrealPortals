@@ -145,6 +145,10 @@ public:
 
 	FRotator getPortalRotation(FRotator baseRot);
 
+	FVector getCameraLocation(FVector basePos);
+
+	FRotator getCameraRotation(FRotator baseRot);
+
 	void updateCapture();
 
 	void checkScreen();
@@ -183,6 +187,9 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void nearbySync();
+
+	UFUNCTION(BlueprintCallable)
+	void updateOther();
 
 
 	//Blueprint called functions

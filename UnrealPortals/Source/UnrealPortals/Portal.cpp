@@ -198,6 +198,35 @@ FRotator APortal::getPortalRotation(FRotator baseRot)
 
 	FVector shiftedX, shiftedY, shiftedZ;
 	UKismetMathLibrary::BreakRotIntoAxes(baseRot, shiftedX, shiftedY, shiftedZ);
+	shiftedX = otherPortal->shiftCamAxis(shiftedX);
+	shiftedY = otherPortal->shiftCamAxis(shiftedY);
+	shiftedZ = otherPortal->shiftCamAxis(shiftedZ);
+	FRotator newRotation = UKismetMathLibrary::MakeRotationFromAxes(shiftedX, shiftedY, shiftedZ);
+	return newRotation;
+}
+
+FVector APortal::getCameraLocation(FVector basePos)
+{
+	// Gets the transform of the actor but inverts its x and y scale
+	FVector invSelf = otherPortal->GetActorTransform().GetScale3D();
+	invSelf.X *= -1.0;
+	invSelf.Y *= -1.0;
+
+	// Returns the position of the camera, relative to the semi inverted scale of of the player camera
+	FTransform form(otherPortal->GetActorTransform().Rotator(), otherPortal->GetActorTransform().GetLocation(), invSelf);
+
+	FVector invert = UKismetMathLibrary::InverseTransformLocation(form, basePos);
+
+	return UKismetMathLibrary::TransformLocation(AActor::GetActorTransform(), invert);
+}
+
+FRotator APortal::getCameraRotation(FRotator baseRot)
+{
+	// Gets the camera's rotator and produces its transforms, and produces 3 vectors to invert its position relative to the portal
+	FVector shiftedX, shiftedY, shiftedZ;
+	UKismetMathLibrary::BreakRotIntoAxes(baseRot, shiftedX, shiftedY, shiftedZ);
+
+	// Places the camera axes into the shifted axes, shifts them relative to the camera, then returns a new camera rotation based on the rotation formed on the axes
 	shiftedX = shiftCamAxis(shiftedX);
 	shiftedY = shiftCamAxis(shiftedY);
 	shiftedZ = shiftCamAxis(shiftedZ);
@@ -473,11 +502,20 @@ void APortal::nearbySync()
 		if (returnNat.GetComponent() != otherPortal->intersectionCollider)
 		{
 			syncPortals(true);
+
+			UGameplayStatics::GetPlayerController(GetWorld(), 0)->SetViewTargetWithBlend(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
 		}
 	}
 }
 
+void APortal::updateOther()
+{
+	// This needs to be improved by a more permanent solution
 
+
+
+	//playCam->SetWorldLocationAndRotation()
+}
 
 
 

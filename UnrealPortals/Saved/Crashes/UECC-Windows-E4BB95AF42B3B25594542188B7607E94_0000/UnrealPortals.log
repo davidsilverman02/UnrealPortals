@@ -1139,13 +1139,3 @@ LogConfig: CVar [[LogNamedEventFilters:Frame *]] deferred - dummy variable creat
 [2025.05.12-17.17.15:539][190]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
 [2025.05.12-17.17.15:613][190]LogSlate: Warning: The command 'BlueprintEditorSpawnNodes.AddActorRefAction->CommandInfo' has the same default chord as 'BlueprintEditorSpawnNodes.(Class=/Script/BlueprintGraph.K2Node_Knot Key=R Shift=false Ctrl=false Alt=false)' [R]
 [2025.05.12-17.17.17:537][190]LogStall: Stall detector 'UAssetEditorSubsystem::OpenEditorForAsset' exceeded budget of 2.000000s, reporting...
-[2025.05.12-17.17.18:012][190]LogStall: Stall detector 'UAssetEditorSubsystem::OpenEditorForAsset' report submitted, and took 0.475058s
-[2025.05.12-17.17.19:077][190]LogStall: Stall detector 'UAssetEditorSubsystem::OpenEditorForAsset' complete in 3.543987s (1.543987s overbudget)
-[2025.05.12-17.17.19:138][190]LogActor: Warning: BasePortal_C /Engine/Transient.World_1:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
-[2025.05.12-17.17.19:173][190]LogSlate: Took 0.000298 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2025.05.12-17.18.54:669][ 24]LogDerivedDataCache: C:/Users/david.silverman/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.383 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 854 files in 1467 folders with total size 78 MiB.
-[2025.05.12-18.11.42:177][683]LogAudioMixer: Warning: AudioMixerPlatformInterface Timeout [ 5 Seconds] waiting for h/w. InstanceID=1
-[2025.05.12-18.11.42:508][683]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=44860
-[2025.05.12-18.11.42:836][684]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{7a6c47e4-679c-4021-836e-fb3f2e581c4d}, Name=Speakers (Realtek(R) Audio)), Reason=AudioMixerPlatformInterface. Timeout waiting for h/w., InstanceID=1, DurationMS=40.18
-[2025.05.12-18.11.42:843][684]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
-[2025.05.12-18.11.42:845][684]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
