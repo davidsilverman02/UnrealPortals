@@ -76,7 +76,7 @@ public:
 	UMaterial* portalBasis;
 
 	// The Portal this specific portal goes to
-	UPROPERTY(EditAnywhere, Category = "PortalData")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "PortalData")
 	APortal* otherPortal;
 
 	UPROPERTY(BlueprintReadWrite, Category = "PortalData")

@@ -35786,3 +35786,279 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2025.05.13-17.53.18:894][895]LogFileHelpers: InternalPromptForCheckoutAndSave took 97 ms (total: 1.84 sec)
 [2025.05.13-17.53.18:896][895]AssetCheck: New page: Asset Save: BasePortal
 [2025.05.13-17.53.18:896][895]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.00.07:938][713]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.00.08:033][713]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.00.08:034][713]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortalE95140F941C240C234F9BDB0FD67116B.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.00.08:043][713]LogFileHelpers: InternalPromptForCheckoutAndSave took 105 ms (total: 1.95 sec)
+[2025.05.13-18.00.08:045][713]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.00.08:045][713]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.00.17:819][295]BlueprintLog: New page: Compile BasePortal
+[2025.05.13-18.00.17:837][295]LogActor: Warning: BasePortal_C /Engine/Transient.World_7:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.00.17:839][295]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.00.17:840][295]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.00.17:842][295]LogActor: Warning: DemoPortal_C /Engine/Transient.World_0:PersistentLevel.DemoPortal_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.00.17:875][295]LogUObjectHash: Compacting FUObjectHashTables data took   1.94ms
+[2025.05.13-18.00.43:992][848]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.00.44:079][848]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.00.44:079][848]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortalE9CE20784DB475B375D81E988A7A2F2B.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.00.44:087][848]LogFileHelpers: InternalPromptForCheckoutAndSave took 94 ms (total: 2.04 sec)
+[2025.05.13-18.00.44:089][848]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.00.44:090][848]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.00.44:794][890]BlueprintLog: New page: Compile BasePortal
+[2025.05.13-18.00.44:810][890]LogActor: Warning: BasePortal_C /Engine/Transient.World_7:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.00.44:811][890]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.00.44:813][890]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.00.44:814][890]LogActor: Warning: DemoPortal_C /Engine/Transient.World_0:PersistentLevel.DemoPortal_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.00.44:847][890]LogUObjectHash: Compacting FUObjectHashTables data took   1.79ms
+[2025.05.13-18.02.22:372][346]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.02.22:460][346]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.02.22:460][346]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortal5EDBD0F04D19E346F9F6B7A177724112.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.02.22:472][346]LogFileHelpers: InternalPromptForCheckoutAndSave took 100 ms (total: 2.14 sec)
+[2025.05.13-18.02.22:475][346]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.02.22:475][346]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.02.23:074][382]BlueprintLog: New page: Compile BasePortal
+[2025.05.13-18.02.23:092][382]LogActor: Warning: BasePortal_C /Engine/Transient.World_7:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.02.23:094][382]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.02.23:095][382]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.02.23:097][382]LogActor: Warning: DemoPortal_C /Engine/Transient.World_0:PersistentLevel.DemoPortal_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.02.23:128][382]LogUObjectHash: Compacting FUObjectHashTables data took   1.89ms
+[2025.05.13-18.02.44:497][194]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.02.44:589][194]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.02.44:589][194]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortalAE1728804A3460F5A13595B77A0EB155.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.02.44:597][194]LogFileHelpers: InternalPromptForCheckoutAndSave took 100 ms (total: 2.24 sec)
+[2025.05.13-18.02.44:600][194]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.02.44:600][194]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.02.45:777][264]BlueprintLog: New page: Compile BasePortal
+[2025.05.13-18.02.45:801][264]LogActor: Warning: BasePortal_C /Engine/Transient.World_7:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.02.45:803][264]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.02.45:805][264]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.02.45:807][264]LogActor: Warning: DemoPortal_C /Engine/Transient.World_0:PersistentLevel.DemoPortal_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.02.45:842][264]LogUObjectHash: Compacting FUObjectHashTables data took   1.92ms
+[2025.05.13-18.02.53:579][682]LogViewport: Scene viewport resized to 781x647, mode Windowed.
+[2025.05.13-18.03.06:648][414]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.03.06:725][414]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.03.06:726][414]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortal865421204AE2BCFD4A3D64914A55E3E0.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.03.06:735][414]LogFileHelpers: InternalPromptForCheckoutAndSave took 85 ms (total: 2.33 sec)
+[2025.05.13-18.03.06:736][414]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.03.06:736][414]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.04.37:584][378]LogUObjectHash: Compacting FUObjectHashTables data took   2.05ms
+[2025.05.13-18.04.37:587][378]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/ThirdPerson/Maps/ThirdPersonMap' took 0.029
+[2025.05.13-18.04.37:588][378]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/PortalContent/PortalAssets/BasePortal] ([2] browsable assets)...
+[2025.05.13-18.04.37:588][378]OBJ SavePackage: Finished generating thumbnails for package [/Game/PortalContent/PortalAssets/BasePortal]
+[2025.05.13-18.04.37:606][378]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/PortalContent/PortalAssets/BasePortal_Auto3
+[2025.05.13-18.04.37:607][378]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortal_Auto3105C56AD4DB0E0EE20E2E09FC2AD0EB1.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/Autosaves/Game/PortalContent/PortalAssets/BasePortal_Auto3.uasset'
+[2025.05.13-18.04.37:608][378]LogFileHelpers: Auto-saving content packages took 0.021
+[2025.05.13-18.04.52:950][244]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.04.53:034][244]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.04.53:035][244]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortal6D58EFBB4166DAA38640908DBE1F4442.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.04.53:047][244]LogFileHelpers: InternalPromptForCheckoutAndSave took 97 ms (total: 2.42 sec)
+[2025.05.13-18.04.53:049][244]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.04.53:049][244]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.04.54:115][301]BlueprintLog: New page: Compile BasePortal
+[2025.05.13-18.04.54:138][301]LogActor: Warning: BasePortal_C /Engine/Transient.World_7:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.04.54:139][301]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.04.54:141][301]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.04.54:142][301]LogActor: Warning: DemoPortal_C /Engine/Transient.World_0:PersistentLevel.DemoPortal_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.04.54:175][301]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
+[2025.05.13-18.05.47:007][897]BlueprintLog: New page: Compile BasePortal
+[2025.05.13-18.05.47:028][897]LogActor: Warning: BasePortal_C /Engine/Transient.World_7:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.05.47:029][897]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.05.47:031][897]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.05.47:032][897]LogActor: Warning: DemoPortal_C /Engine/Transient.World_0:PersistentLevel.DemoPortal_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.05.47:063][897]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
+[2025.05.13-18.05.47:943][943]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.05.48:030][943]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.05.48:030][943]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortal41863E5849E163BD2132A19065498321.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.05.48:038][943]LogFileHelpers: InternalPromptForCheckoutAndSave took 95 ms (total: 2.52 sec)
+[2025.05.13-18.05.48:040][943]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.05.48:041][943]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.06.18:588][754]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.06.18:679][754]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.06.18:679][754]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortalEBDF8242463FFFCDB1BB54BAEA400B23.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.06.18:693][754]LogFileHelpers: InternalPromptForCheckoutAndSave took 105 ms (total: 2.62 sec)
+[2025.05.13-18.06.18:695][754]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.06.18:695][754]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.07.21:110][380]LogDerivedDataCache: C:/Users/david.silverman/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:01.162 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 854 files in 1467 folders with total size 78 MiB.
+[2025.05.13-18.08.44:203][ 50]BlueprintLog: New page: Compile BasePortal
+[2025.05.13-18.08.44:225][ 50]LogActor: Warning: BasePortal_C /Engine/Transient.World_7:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.08.44:226][ 50]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.08.44:228][ 50]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.08.44:230][ 50]LogActor: Warning: DemoPortal_C /Engine/Transient.World_0:PersistentLevel.DemoPortal_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.08.44:263][ 50]LogUObjectHash: Compacting FUObjectHashTables data took   1.75ms
+[2025.05.13-18.08.45:280][107]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.08.45:366][107]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.08.45:367][107]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortal8843375C44A69B9FE426A9BA6B04C7BA.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.08.45:382][107]LogFileHelpers: InternalPromptForCheckoutAndSave took 102 ms (total: 2.73 sec)
+[2025.05.13-18.08.45:386][107]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.08.45:386][107]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.09.33:187][675]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.09.33:272][675]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.09.33:273][675]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortalA0E6024A47B0F46DF82483A4FCC691A4.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.09.33:283][675]LogFileHelpers: InternalPromptForCheckoutAndSave took 96 ms (total: 2.82 sec)
+[2025.05.13-18.09.33:284][675]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.09.33:284][675]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.11.37:949][672]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.11.38:038][672]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.11.38:038][672]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortal40367F75474629A837A2D1802DF595B8.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.11.38:048][672]LogFileHelpers: InternalPromptForCheckoutAndSave took 99 ms (total: 2.92 sec)
+[2025.05.13-18.11.38:049][672]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.11.38:049][672]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.11.40:182][793]LogSlate: Window 'BasePortal' being destroyed
+[2025.05.13-18.11.40:194][793]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2025.05.13-18.11.40:195][793]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.05.13-18.11.42:052][898]Candidate modules for hot reload:
+[2025.05.13-18.11.42:052][898]  UnrealPortals
+[2025.05.13-18.11.42:090][898]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_5.3/Engine/Build/BatchFiles/Build.bat  -ModuleWithSuffix=UnrealPortals,3160 UnrealPortalsEditor Win64 Development -Project="C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/UnrealPortals.uproject" "C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/UnrealPortals.uproject"  -IgnoreJunk]
+[2025.05.13-18.11.42:117][898]Warning: Starting HotReload took  0.1s.
+[2025.05.13-18.12.05:359][248]CompilerResultsLog: New page: Compilation - May 13, 2025, 10:12:05 AM
+[2025.05.13-18.12.05:359][248]CompilerResultsLog: Using bundled DotNet SDK version: 6.0.302
+[2025.05.13-18.12.05:359][248]CompilerResultsLog: Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -ModuleWithSuffix=UnrealPortals,3160 UnrealPortalsEditor Win64 Development -Project="C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/UnrealPortals.uproject" "C:/Users/david.silverman/source/UnrealPortals/UnrealPortals/UnrealPortals.uproject"  -IgnoreJunk
+[2025.05.13-18.12.05:359][248]CompilerResultsLog: Log file: C:\Users\david.silverman\AppData\Local\UnrealBuildTool\Log.txt
+[2025.05.13-18.12.05:359][248]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Users\david.silverman\source\UnrealPortals).
+[2025.05.13-18.12.05:359][248]CompilerResultsLog: Invalidating makefile for UnrealPortalsEditor (working set of source files changed)
+[2025.05.13-18.12.05:359][248]CompilerResultsLog: Parsing headers for UnrealPortalsEditor
+[2025.05.13-18.12.05:359][248]CompilerResultsLog:   Running Internal UnrealHeaderTool C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\UnrealPortals.uproject C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\UnrealPortalsEditor\Development\UnrealPortalsEditor.uhtmanifest -WarningsAsErrors -installed
+[2025.05.13-18.12.05:359][248]CompilerResultsLog: Total of 2 written
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: Reflection code generated for UnrealPortalsEditor in 1.6282801 seconds
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: Building UnrealPortalsEditor...
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: Using Visual Studio 2022 14.36.32542 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: [Upgrade]
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: [Upgrade] Using backward-compatible build settings. The latest version of UE sets the following values by default, which may require code changes:
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: [Upgrade]     bLegacyParentIncludePaths = false               => Omits module parent folders from include paths to reduce compiler command line length. (Previously: true).
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: [Upgrade]     CppStandard = CppStandardVersion.Default        => Updates C++ Standard to C++20 (Previously: CppStandardVersion.Cpp17).
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: [Upgrade]     WindowsPlatform.bStrictConformanceMode = true   => Updates MSVC strict conformance mode to true (Previously: false).
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: [Upgrade] Suppress this message by setting 'DefaultBuildSettings = BuildSettingsVersion.V4;' in UnrealPortalsEditor.Target.cs, and explicitly overriding settings that differ from the new defaults.
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: [Upgrade]
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: [Adaptive Build] Excluded from UnrealPortals unity file: Portal.cpp
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: Determining max actions to execute in parallel (6 physical cores, 12 logical cores)
+[2025.05.13-18.12.05:360][248]CompilerResultsLog:   Executing up to 6 processes, one per physical core
+[2025.05.13-18.12.05:360][248]CompilerResultsLog:   Requested 1.5 GB memory per action, 6.03 GB available: limiting max parallel actions to 4
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: ------ Building 6 action(s) started ------
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: [1/6] Compile [x64] UnrealPortals.init.gen.cpp
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: [2/6] Compile [x64] Portal.gen.cpp
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: [3/6] Compile [x64] Portal.cpp
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: [4/6] Link [x64] UnrealEditor-UnrealPortals-3160.lib
+[2025.05.13-18.12.05:360][248]CompilerResultsLog:    Creating library C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealEditor-UnrealPortals-3160.lib and object C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealEditor-UnrealPortals-3160.exp
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: [5/6] Link [x64] UnrealEditor-UnrealPortals-3160.dll
+[2025.05.13-18.12.05:360][248]CompilerResultsLog:    Creating library C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealEditor-UnrealPortals-3160.sup.lib and object C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealEditor-UnrealPortals-3160.sup.exp
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: [6/6] WriteMetadata UnrealPortalsEditor.target
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: Total time in Parallel executor: 13.77 seconds
+[2025.05.13-18.12.05:360][248]CompilerResultsLog: Total execution time: 22.88 seconds
+[2025.05.13-18.12.05:360][248]LogMainFrame: MainFrame: Module compiling took 23.322 seconds
+[2025.05.13-18.12.05:389][248]LogUObjectHash: Compacting FUObjectHashTables data took   1.88ms
+[2025.05.13-18.12.05:457][248]LogClass: UPackage /Script/UnrealPortals Reload.
+[2025.05.13-18.12.05:457][248]LogClass: UClass Portal Reload.
+[2025.05.13-18.12.05:457][248]LogClass: Could not find existing class Portal in package /Script/UnrealPortals for reload, assuming new or modified class
+[2025.05.13-18.12.05:457][248]LogClass: Function getViewport is new or belongs to a modified class.
+[2025.05.13-18.12.05:457][248]LogClass: Function initializeMaterials is new or belongs to a modified class.
+[2025.05.13-18.12.05:457][248]LogClass: Function isPointCrossing is new or belongs to a modified class.
+[2025.05.13-18.12.05:457][248]LogClass: Function movePlayer is new or belongs to a modified class.
+[2025.05.13-18.12.05:457][248]LogClass: Function nearbySync is new or belongs to a modified class.
+[2025.05.13-18.12.05:457][248]LogClass: Function setPortalMaterial is new or belongs to a modified class.
+[2025.05.13-18.12.05:457][248]LogClass: Function syncPortals is new or belongs to a modified class.
+[2025.05.13-18.12.05:457][248]LogClass: Function teleSync is new or belongs to a modified class.
+[2025.05.13-18.12.05:457][248]LogClass: Function updateOther is new or belongs to a modified class.
+[2025.05.13-18.12.05:489][248]Re-instancing Portal after reload.
+[2025.05.13-18.12.05:511][248]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.12.05:513][248]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.12.05:516][248]LogActor: Warning: DemoPortal_C /Engine/Transient.World_0:PersistentLevel.DemoPortal_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.12.05:742][248]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
+[2025.05.13-18.12.05:791][248]Display: HotReload took 23.8s.
+[2025.05.13-18.12.05:791][248]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed, 3 classes unchanged, 2 functions remapped
+[2025.05.13-18.12.11:652][569]LogActor: Warning: DemoPortal_C /Engine/Transient.World_0:PersistentLevel.DemoPortal_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.12.12:901][637]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.12.12:901][637]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.05.13-18.12.12:902][637]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.05.13-18.12.13:122][637]LogActor: Warning: BasePortal_C /Engine/Transient.World_8:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.12.30:802][567]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.12.30:895][567]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.12.30:895][567]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortal48786EE54262884681408F99E341008C.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.12.30:906][567]LogFileHelpers: InternalPromptForCheckoutAndSave took 103 ms (total: 3.03 sec)
+[2025.05.13-18.12.30:907][567]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.12.30:907][567]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.12.31:474][600]BlueprintLog: New page: Compile BasePortal
+[2025.05.13-18.12.31:498][600]LogActor: Warning: BasePortal_C /Engine/Transient.World_8:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.12.31:500][600]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.12.31:502][600]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.12.31:505][600]LogActor: Warning: DemoPortal_C /Engine/Transient.World_0:PersistentLevel.DemoPortal_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.12.31:645][600]LogUObjectHash: Compacting FUObjectHashTables data took   3.10ms
+[2025.05.13-18.13.16:355][901]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.13.16:447][901]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.13.16:448][901]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortalEA82414A4AEBD9F8261CE287E730D5D4.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.13.16:463][901]LogFileHelpers: InternalPromptForCheckoutAndSave took 108 ms (total: 3.14 sec)
+[2025.05.13-18.13.16:465][901]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.13.16:465][901]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.13.17:093][938]BlueprintLog: New page: Compile BasePortal
+[2025.05.13-18.13.17:112][938]LogActor: Warning: BasePortal_C /Engine/Transient.World_8:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.13.17:113][938]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.13.17:115][938]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.13.17:117][938]LogActor: Warning: DemoPortal_C /Engine/Transient.World_0:PersistentLevel.DemoPortal_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.13.17:201][938]LogUObjectHash: Compacting FUObjectHashTables data took   2.97ms
+[2025.05.13-18.13.40:833][339]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.13.40:930][339]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.13.40:931][339]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortal03029A5E4001CD0FCAD8518811D18875.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.13.40:940][339]LogFileHelpers: InternalPromptForCheckoutAndSave took 106 ms (total: 3.24 sec)
+[2025.05.13-18.13.40:942][339]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.13.40:942][339]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.14.50:255][537]LogSelectionDetails: Warning: NavigateToFunctionSource:  Unable to find source file and line number for 'APlayerCameraManager::GetCameraLocation' [Element not found.]
+[2025.05.13-18.15.03:788][277]BlueprintLog: New page: Compile BasePortal
+[2025.05.13-18.15.03:815][277]LogActor: Warning: BasePortal_C /Engine/Transient.World_8:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.15.03:816][277]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.15.03:818][277]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.15.03:820][277]LogActor: Warning: DemoPortal_C /Engine/Transient.World_0:PersistentLevel.DemoPortal_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.15.03:853][277]LogUObjectHash: Compacting FUObjectHashTables data took   1.55ms
+[2025.05.13-18.17.05:916][304]LogUObjectHash: Compacting FUObjectHashTables data took   1.91ms
+[2025.05.13-18.17.05:921][304]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/ThirdPerson/Maps/ThirdPersonMap' took 0.026
+[2025.05.13-18.17.05:922][304]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/PortalContent/PortalAssets/BasePortal] ([2] browsable assets)...
+[2025.05.13-18.17.05:922][304]OBJ SavePackage: Finished generating thumbnails for package [/Game/PortalContent/PortalAssets/BasePortal]
+[2025.05.13-18.17.05:947][304]LogSavePackage: Moving output files for package: /Temp/Autosaves/Game/PortalContent/PortalAssets/BasePortal_Auto4
+[2025.05.13-18.17.05:948][304]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortal_Auto40CC124BF46C6F7DFE5393F8D4FC4907C.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/Autosaves/Game/PortalContent/PortalAssets/BasePortal_Auto4.uasset'
+[2025.05.13-18.17.05:949][304]LogFileHelpers: Auto-saving content packages took 0.027
+[2025.05.13-18.19.02:899][800]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.19.02:988][800]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.19.02:989][800]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortal57B0DABB47D9C02BCF49EAAB7F21D64E.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.19.02:997][800]LogFileHelpers: InternalPromptForCheckoutAndSave took 98 ms (total: 3.34 sec)
+[2025.05.13-18.19.03:000][800]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.19.03:000][800]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.19.03:703][836]BlueprintLog: New page: Compile BasePortal
+[2025.05.13-18.19.03:731][836]LogActor: Warning: BasePortal_C /Engine/Transient.World_8:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.19.03:733][836]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.19.03:735][836]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.19.03:737][836]LogActor: Warning: DemoPortal_C /Engine/Transient.World_0:PersistentLevel.DemoPortal_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.19.03:777][836]LogUObjectHash: Compacting FUObjectHashTables data took   1.76ms
+[2025.05.13-18.19.42:390][477]BlueprintLog: New page: Compile BasePortal
+[2025.05.13-18.19.42:415][477]LogActor: Warning: BasePortal_C /Engine/Transient.World_8:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.19.42:416][477]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.19.42:418][477]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.19.42:420][477]LogActor: Warning: DemoPortal_C /Engine/Transient.World_0:PersistentLevel.DemoPortal_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.19.42:453][477]LogUObjectHash: Compacting FUObjectHashTables data took   1.56ms
+[2025.05.13-18.19.43:348][520]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.19.43:424][520]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.19.43:424][520]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortal3C5C6F674F0E2BE813035FA984F3B3EA.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.19.43:437][520]LogFileHelpers: InternalPromptForCheckoutAndSave took 90 ms (total: 3.43 sec)
+[2025.05.13-18.19.43:439][520]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.19.43:439][520]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.22.22:396][916]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.22.22:491][916]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.22.22:492][916]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortal0030A16E46D580A8F015B18A164F4698.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.22.22:501][916]LogFileHelpers: InternalPromptForCheckoutAndSave took 104 ms (total: 3.54 sec)
+[2025.05.13-18.22.22:505][916]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.22.22:505][916]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.22.23:272][955]BlueprintLog: New page: Compile BasePortal
+[2025.05.13-18.22.23:297][955]LogActor: Warning: BasePortal_C /Engine/Transient.World_8:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.22.23:299][955]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.22.23:300][955]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.22.23:302][955]LogActor: Warning: DemoPortal_C /Engine/Transient.World_0:PersistentLevel.DemoPortal_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.22.23:333][955]LogUObjectHash: Compacting FUObjectHashTables data took   1.79ms
+[2025.05.13-18.23.42:664][669]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.05.13-18.23.42:754][669]LogSavePackage: Moving output files for package: /Game/PortalContent/PortalAssets/BasePortal
+[2025.05.13-18.23.42:755][669]LogSavePackage: Moving '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Saved/BasePortal00C797034764C950200959B4FDC5B5F3.tmp' to '../../../../../../Users/david.silverman/source/UnrealPortals/UnrealPortals/Content/PortalContent/PortalAssets/BasePortal.uasset'
+[2025.05.13-18.23.42:770][669]LogFileHelpers: InternalPromptForCheckoutAndSave took 105 ms (total: 3.64 sec)
+[2025.05.13-18.23.42:772][669]AssetCheck: New page: Asset Save: BasePortal
+[2025.05.13-18.23.42:772][669]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/PortalContent/PortalAssets/BasePortal.BasePortal
+[2025.05.13-18.23.43:450][709]BlueprintLog: New page: Compile BasePortal
+[2025.05.13-18.23.43:480][709]LogActor: Warning: BasePortal_C /Engine/Transient.World_8:PersistentLevel.BasePortal_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.23.43:482][709]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1358229655 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.23.43:484][709]LogActor: Warning: DemoPortal_C /Game/ThirdPerson/Maps/ThirdPersonMap.ThirdPersonMap:PersistentLevel.DemoPortal_C_UAID_5405DB522B7E041A02_1384006656 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.23.43:486][709]LogActor: Warning: DemoPortal_C /Engine/Transient.World_0:PersistentLevel.DemoPortal_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.05.13-18.23.43:524][709]LogUObjectHash: Compacting FUObjectHashTables data took   1.98ms
