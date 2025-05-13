@@ -517,7 +517,7 @@ void APortal::updateOther()
 	FVector pos = Cast<AUnrealPortalsCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0))->GetFollowCamera()->GetComponentLocation();
 	FRotator rot = Cast<AUnrealPortalsCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0))->GetFollowCamera()->GetComponentRotation();
 
-	//playCam->SetWorldLocationAndRotation(getCameraLocation(pos.GetLocation()), getCameraRotation(pos.GetRo));
+	playCam->SetWorldLocationAndRotation(getCameraLocation(pos), getCameraRotation(rot));
 }
 
 
