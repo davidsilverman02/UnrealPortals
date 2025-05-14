@@ -163,6 +163,8 @@ public:
 
 	FVector shiftCamAxis(FVector axis);
 
+	FVector alterShiftCamAxis(FVector axis);
+
 	int truncatedQuality(float value);
 
 	FVector relativePortalForward();
@@ -192,6 +194,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void updateOther();
 
+	UFUNCTION(BlueprintCallable)
+	void moveItems();
 
 	//Blueprint called functions
 	
