@@ -146,8 +146,10 @@ public:
 
 	FRotator getPortalRotation(FRotator baseRot);
 
+	UFUNCTION(BlueprintCallable)
 	FVector getCameraLocation(FVector basePos);
 
+	UFUNCTION(BlueprintCallable)
 	FRotator getCameraRotation(FRotator baseRot);
 
 	void updateCapture();
@@ -162,6 +164,8 @@ public:
 	FVector2D getViewport();
 
 	FVector shiftCamAxis(FVector axis);
+
+	FVector alterShiftCamAxis(FVector axis);
 
 	int truncatedQuality(float value);
 

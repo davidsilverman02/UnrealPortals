@@ -9,6 +9,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodePortal() {}
 // Cross Module References
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector2D();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
@@ -92,6 +93,22 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		*(FVector2D*)Z_Param__Result=P_THIS->getViewport();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(APortal::execgetCameraRotation)
+	{
+		P_GET_STRUCT(FRotator,Z_Param_baseRot);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FRotator*)Z_Param__Result=P_THIS->getCameraRotation(Z_Param_baseRot);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(APortal::execgetCameraLocation)
+	{
+		P_GET_STRUCT(FVector,Z_Param_basePos);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FVector*)Z_Param__Result=P_THIS->getCameraLocation(Z_Param_basePos);
+		P_NATIVE_END;
+	}
 	static FName NAME_APortal_isntPortOb = FName(TEXT("isntPortOb"));
 	void APortal::isntPortOb()
 	{
@@ -106,6 +123,8 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 	{
 		UClass* Class = APortal::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "getCameraLocation", &APortal::execgetCameraLocation },
+			{ "getCameraRotation", &APortal::execgetCameraRotation },
 			{ "getViewport", &APortal::execgetViewport },
 			{ "initializeMaterials", &APortal::execinitializeMaterials },
 			{ "isPointCrossing", &APortal::execisPointCrossing },
@@ -117,6 +136,82 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 			{ "updateOther", &APortal::execupdateOther },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_APortal_getCameraLocation_Statics
+	{
+		struct Portal_eventgetCameraLocation_Parms
+		{
+			FVector basePos;
+			FVector ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_basePos;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_APortal_getCameraLocation_Statics::NewProp_basePos = { "basePos", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(Portal_eventgetCameraLocation_Parms, basePos), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_APortal_getCameraLocation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(Portal_eventgetCameraLocation_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APortal_getCameraLocation_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APortal_getCameraLocation_Statics::NewProp_basePos,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APortal_getCameraLocation_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APortal_getCameraLocation_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Portal.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APortal_getCameraLocation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APortal, nullptr, "getCameraLocation", nullptr, nullptr, Z_Construct_UFunction_APortal_getCameraLocation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_getCameraLocation_Statics::PropPointers), sizeof(Z_Construct_UFunction_APortal_getCameraLocation_Statics::Portal_eventgetCameraLocation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_getCameraLocation_Statics::Function_MetaDataParams), Z_Construct_UFunction_APortal_getCameraLocation_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_getCameraLocation_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_APortal_getCameraLocation_Statics::Portal_eventgetCameraLocation_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_APortal_getCameraLocation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APortal_getCameraLocation_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_APortal_getCameraRotation_Statics
+	{
+		struct Portal_eventgetCameraRotation_Parms
+		{
+			FRotator baseRot;
+			FRotator ReturnValue;
+		};
+		static const UECodeGen_Private::FStructPropertyParams NewProp_baseRot;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_APortal_getCameraRotation_Statics::NewProp_baseRot = { "baseRot", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(Portal_eventgetCameraRotation_Parms, baseRot), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_APortal_getCameraRotation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(Portal_eventgetCameraRotation_Parms, ReturnValue), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APortal_getCameraRotation_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APortal_getCameraRotation_Statics::NewProp_baseRot,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APortal_getCameraRotation_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APortal_getCameraRotation_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Portal.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APortal_getCameraRotation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APortal, nullptr, "getCameraRotation", nullptr, nullptr, Z_Construct_UFunction_APortal_getCameraRotation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_getCameraRotation_Statics::PropPointers), sizeof(Z_Construct_UFunction_APortal_getCameraRotation_Statics::Portal_eventgetCameraRotation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_getCameraRotation_Statics::Function_MetaDataParams), Z_Construct_UFunction_APortal_getCameraRotation_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_getCameraRotation_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_APortal_getCameraRotation_Statics::Portal_eventgetCameraRotation_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_APortal_getCameraRotation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APortal_getCameraRotation_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_APortal_getViewport_Statics
 	{
@@ -537,6 +632,8 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_APortal_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_APortal_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_APortal_getCameraLocation, "getCameraLocation" }, // 3264899215
+		{ &Z_Construct_UFunction_APortal_getCameraRotation, "getCameraRotation" }, // 2349872453
 		{ &Z_Construct_UFunction_APortal_getViewport, "getViewport" }, // 1670365476
 		{ &Z_Construct_UFunction_APortal_initializeMaterials, "initializeMaterials" }, // 683769587
 		{ &Z_Construct_UFunction_APortal_isntPortOb, "isntPortOb" }, // 1934380805
@@ -795,9 +892,9 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APortal, APortal::StaticClass, TEXT("APortal"), &Z_Registration_Info_UClass_APortal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortal), 1126857239U) },
+		{ Z_Construct_UClass_APortal, APortal::StaticClass, TEXT("APortal"), &Z_Registration_Info_UClass_APortal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortal), 244666120U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_3035713267(TEXT("/Script/UnrealPortals"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_3663807427(TEXT("/Script/UnrealPortals"),
 		Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

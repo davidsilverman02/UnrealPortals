@@ -227,9 +227,9 @@ FRotator APortal::getCameraRotation(FRotator baseRot)
 	UKismetMathLibrary::BreakRotIntoAxes(baseRot, shiftedX, shiftedY, shiftedZ);
 
 	// Places the camera axes into the shifted axes, shifts them relative to the camera, then returns a new camera rotation based on the rotation formed on the axes
-	shiftedX = shiftCamAxis(shiftedX);
-	shiftedY = shiftCamAxis(shiftedY);
-	shiftedZ = shiftCamAxis(shiftedZ);
+	shiftedX = alterShiftCamAxis(shiftedX);
+	shiftedY = alterShiftCamAxis(shiftedY);
+	shiftedZ = alterShiftCamAxis(shiftedZ);
 	FRotator newRotation = UKismetMathLibrary::MakeRotationFromAxes(shiftedX, shiftedY, shiftedZ);
 	return newRotation;
 }
@@ -328,6 +328,16 @@ FVector APortal::shiftCamAxis(FVector axis)
 	shiftedAxis = UKismetMathLibrary::MirrorVectorByNormal(shiftedAxis, FVector::ForwardVector);
 	shiftedAxis = UKismetMathLibrary::MirrorVectorByNormal(shiftedAxis, FVector::RightVector);
 	shiftedAxis = UKismetMathLibrary::TransformDirection(otherPortal->GetActorTransform(), shiftedAxis);
+	return shiftedAxis;
+}
+
+FVector APortal::alterShiftCamAxis(FVector axis)
+{
+	FVector shiftedAxis = axis;
+	shiftedAxis = UKismetMathLibrary::InverseTransformDirection(otherPortal->GetActorTransform(), shiftedAxis);
+	shiftedAxis = UKismetMathLibrary::MirrorVectorByNormal(shiftedAxis, FVector::ForwardVector);
+	shiftedAxis = UKismetMathLibrary::MirrorVectorByNormal(shiftedAxis, FVector::RightVector);
+	shiftedAxis = UKismetMathLibrary::TransformDirection(AActor::GetActorTransform(), shiftedAxis);
 	return shiftedAxis;
 }
 

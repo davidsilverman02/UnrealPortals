@@ -28,7 +28,9 @@ class UMaterial;
 	DECLARE_FUNCTION(execteleSync); \
 	DECLARE_FUNCTION(execsyncPortals); \
 	DECLARE_FUNCTION(execisPointCrossing); \
-	DECLARE_FUNCTION(execgetViewport);
+	DECLARE_FUNCTION(execgetViewport); \
+	DECLARE_FUNCTION(execgetCameraRotation); \
+	DECLARE_FUNCTION(execgetCameraLocation);
 
 
 #define FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_40_ACCESSORS
