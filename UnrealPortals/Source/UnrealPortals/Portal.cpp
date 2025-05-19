@@ -619,3 +619,8 @@ void APortal::movePlayer()
 
 	comp->setVelocity(translateVelocity(originSpd)); 
 }
+
+void APortal::runTeleportation()
+{
+	// convert the blueprints you made here
+}

@@ -215,6 +215,10 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void movePlayer();
 
+	UFUNCTION(BlueprintCallable)
+	void runTeleportation();
+
+
 	//UFUNCTION(BlueprintCallable)
 	//void teleportActor(AActor* teleported);
 };
