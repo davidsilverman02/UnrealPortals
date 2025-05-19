@@ -623,4 +623,17 @@ void APortal::movePlayer()
 void APortal::runTeleportation()
 {
 	// convert the blueprints you made here
+
+
+	// in the future, filter for unreal portal objs
+	
+	playerNearbyBox->GetOverlappingActors(inNearby, TSubclassOf<AUnrealPortalsCharacter>());
+
+	teleportBox->GetOverlappingActors(inPortal, TSubclassOf<AUnrealPortalsCharacter>());
+
+	if (inNearby[0])
+	{
+
+	}
+
 }

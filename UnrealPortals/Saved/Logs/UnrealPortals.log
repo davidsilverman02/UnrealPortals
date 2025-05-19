@@ -1145,3 +1145,8 @@ LogConfig: CVar [[framepro.ScopeMinTimeMicroseconds:10]] deferred - dummy variab
 [2025.05.19-17.36.30:327][472]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
 [2025.05.19-17.36.30:327][472]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
 [2025.05.19-17.37.14:329][ 30]LogDerivedDataCache: C:/Users/david.silverman/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:00.069 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 858 files in 1474 folders with total size 78 MiB.
+[2025.05.19-17.44.18:652][302]LogAudioMixer: Warning: AudioMixerPlatformInterface Timeout [ 5 Seconds] waiting for h/w. InstanceID=1
+[2025.05.19-17.44.18:984][303]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=20272
+[2025.05.19-17.44.20:321][307]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{7a6c47e4-679c-4021-836e-fb3f2e581c4d}, Name=Speakers (Realtek(R) Audio)), Reason=AudioMixerPlatformInterface. Timeout waiting for h/w., InstanceID=1, DurationMS=1097.92
+[2025.05.19-17.44.20:321][307]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2025.05.19-17.44.20:322][307]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
