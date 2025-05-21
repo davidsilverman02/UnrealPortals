@@ -215,6 +215,10 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void movePlayer();
 
+	// This updates the position of capture cameras
+	UFUNCTION(BlueprintCallable)
+	void cameraRotation();
+
 	UFUNCTION(BlueprintCallable)
 	void runTeleportation();
 

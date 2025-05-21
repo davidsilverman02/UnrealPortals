@@ -457,7 +457,7 @@ void APortal::syncPortals(bool syncState)
 
 void APortal::teleSync()
 {
-	// changes the relative vision of the camera to the player teleporting
+	// changes the relative vision of the camera to the player teleporting so it can focus on the portal
 
 	if (syncedCam)
 	{
@@ -495,9 +495,9 @@ void APortal::nearbySync()
 		{
 			syncPortals(false);
 
-			//Meant to set the camera targeting of the player controller to the player
+			//Meant to set the camera targeting of the player controller to the other portal
 
-			UGameplayStatics::GetPlayerController(GetWorld(), 0)->SetViewTargetWithBlend(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0));
+			UGameplayStatics::GetPlayerController(GetWorld(), 0)->SetViewTargetWithBlend(otherPortal);
 		}
 	}
 	else
@@ -620,6 +620,17 @@ void APortal::movePlayer()
 	comp->setVelocity(translateVelocity(originSpd)); 
 }
 
+void APortal::cameraRotation()
+{
+	FVector rotationForm = Cast<AUnrealPortalsCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0))->GetFollowCamera()->GetComponentLocation();
+	FRotator rotationRot = Cast<AUnrealPortalsCharacter>(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0))->GetFollowCamera()->GetComponentRotation();
+	
+	FVector newPosition = getCameraLocation(rotationForm);
+	FRotator newRotation = getCameraRotation(rotationRot);
+
+	playCam->SetWorldLocationAndRotation(newPosition, newRotation);
+}
+
 void APortal::runTeleportation()
 {
 	// convert the blueprints you made here
@@ -633,7 +644,24 @@ void APortal::runTeleportation()
 
 	if (inNearby[0])
 	{
+		if (inPortal[0])
+		{
+			// this will check the player's crossing,
 
+			// this specifically moves the player
+
+			if (isPointCrossing(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetActorLocation()))
+			{
+				movePlayer();
+				teleSync();
+			}
+
+			nearbySync();
+		}
+		
+		
+		nearbySync();
 	}
 
+	cameraRotation();
 }

@@ -26,6 +26,20 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 	UNREALPORTALS_API UClass* Z_Construct_UClass_APortal_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_UnrealPortals();
 // End Cross Module References
+	DEFINE_FUNCTION(APortal::execrunTeleportation)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->runTeleportation();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(APortal::execcameraRotation)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->cameraRotation();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(APortal::execmovePlayer)
 	{
 		P_FINISH;
@@ -46,6 +60,13 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		P_FINISH;
 		P_NATIVE_BEGIN;
 		P_THIS->setPortalMaterial(Z_Param_baseMatter);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(APortal::execmoveItems)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->moveItems();
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(APortal::execupdateOther)
@@ -106,17 +127,48 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 	{
 		UClass* Class = APortal::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "cameraRotation", &APortal::execcameraRotation },
 			{ "getViewport", &APortal::execgetViewport },
 			{ "initializeMaterials", &APortal::execinitializeMaterials },
 			{ "isPointCrossing", &APortal::execisPointCrossing },
+			{ "moveItems", &APortal::execmoveItems },
 			{ "movePlayer", &APortal::execmovePlayer },
 			{ "nearbySync", &APortal::execnearbySync },
+			{ "runTeleportation", &APortal::execrunTeleportation },
 			{ "setPortalMaterial", &APortal::execsetPortalMaterial },
 			{ "syncPortals", &APortal::execsyncPortals },
 			{ "teleSync", &APortal::execteleSync },
 			{ "updateOther", &APortal::execupdateOther },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_APortal_cameraRotation_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APortal_cameraRotation_Statics::Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// This updates the position of capture cameras\n" },
+#endif
+		{ "ModuleRelativePath", "Portal.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "This updates the position of capture cameras" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APortal_cameraRotation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APortal, nullptr, "cameraRotation", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_cameraRotation_Statics::Function_MetaDataParams), Z_Construct_UFunction_APortal_cameraRotation_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_APortal_cameraRotation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APortal_cameraRotation_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_APortal_getViewport_Statics
 	{
@@ -239,6 +291,28 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_APortal_moveItems_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APortal_moveItems_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Portal.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APortal_moveItems_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APortal, nullptr, "moveItems", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_moveItems_Statics::Function_MetaDataParams), Z_Construct_UFunction_APortal_moveItems_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_APortal_moveItems()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APortal_moveItems_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_APortal_movePlayer_Statics
 	{
 #if WITH_METADATA
@@ -286,6 +360,28 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APortal_nearbySync_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_APortal_runTeleportation_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APortal_runTeleportation_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Portal.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APortal_runTeleportation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APortal, nullptr, "runTeleportation", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_runTeleportation_Statics::Function_MetaDataParams), Z_Construct_UFunction_APortal_runTeleportation_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_APortal_runTeleportation()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APortal_runTeleportation_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -537,12 +633,15 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_APortal_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_APortal_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_APortal_cameraRotation, "cameraRotation" }, // 1505786413
 		{ &Z_Construct_UFunction_APortal_getViewport, "getViewport" }, // 1670365476
 		{ &Z_Construct_UFunction_APortal_initializeMaterials, "initializeMaterials" }, // 683769587
 		{ &Z_Construct_UFunction_APortal_isntPortOb, "isntPortOb" }, // 1934380805
 		{ &Z_Construct_UFunction_APortal_isPointCrossing, "isPointCrossing" }, // 605872824
+		{ &Z_Construct_UFunction_APortal_moveItems, "moveItems" }, // 1599706417
 		{ &Z_Construct_UFunction_APortal_movePlayer, "movePlayer" }, // 1921698282
 		{ &Z_Construct_UFunction_APortal_nearbySync, "nearbySync" }, // 1099017609
+		{ &Z_Construct_UFunction_APortal_runTeleportation, "runTeleportation" }, // 91075107
 		{ &Z_Construct_UFunction_APortal_setPortalMaterial, "setPortalMaterial" }, // 2030455649
 		{ &Z_Construct_UFunction_APortal_syncPortals, "syncPortals" }, // 203586671
 		{ &Z_Construct_UFunction_APortal_teleSync, "teleSync" }, // 91501455
@@ -795,9 +894,9 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APortal, APortal::StaticClass, TEXT("APortal"), &Z_Registration_Info_UClass_APortal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortal), 489008875U) },
+		{ Z_Construct_UClass_APortal, APortal::StaticClass, TEXT("APortal"), &Z_Registration_Info_UClass_APortal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortal), 1458964809U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_4070539711(TEXT("/Script/UnrealPortals"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_3828550644(TEXT("/Script/UnrealPortals"),
 		Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
