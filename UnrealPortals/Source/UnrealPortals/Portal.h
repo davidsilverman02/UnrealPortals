@@ -209,6 +209,9 @@ public:
 	void testPortal();
 
 	UFUNCTION(BlueprintImplementableEvent)
+	void yelli();
+
+	UFUNCTION(BlueprintImplementableEvent)
 	void isntPortOb();
 
 	// This moves the player, will be replaced with a more permanent solution
@@ -221,6 +224,9 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	void runTeleportation();
+
+	UFUNCTION(BlueprintCallable)
+	int getPee(bool penum);
 
 
 	//UFUNCTION(BlueprintCallable)

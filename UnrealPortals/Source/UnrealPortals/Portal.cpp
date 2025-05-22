@@ -642,6 +642,8 @@ void APortal::runTeleportation()
 
 	teleportBox->GetOverlappingActors(inPortal, TSubclassOf<AUnrealPortalsCharacter>());
 
+	yelli();
+
 	if (inNearby[0])
 	{
 		if (inPortal[0])
@@ -664,4 +666,16 @@ void APortal::runTeleportation()
 	}
 
 	cameraRotation();
+}
+
+int APortal::getPee(bool penum)
+{
+	if (penum)
+	{
+		return inPortal.Num();
+	}
+	else
+	{
+		return inNearby.Num();
+	}
 }
