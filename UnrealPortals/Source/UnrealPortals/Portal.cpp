@@ -636,11 +636,18 @@ void APortal::runTeleportation()
 	// convert the blueprints you made here
 
 
+
 	// in the future, filter for unreal portal objs
 	
 	playerNearbyBox->GetOverlappingActors(inNearby, TSubclassOf<AUnrealPortalsCharacter>());
 
 	teleportBox->GetOverlappingActors(inPortal, TSubclassOf<AUnrealPortalsCharacter>());
+	
+
+	// meant to make sure this isn't in the check
+	//inNearby.Remove(this);
+
+	//inPortal.Remove(this);
 
 	yelli();
 
@@ -678,4 +685,9 @@ int APortal::getPee(bool penum)
 	{
 		return inNearby.Num();
 	}
+}
+
+FString APortal::getObj()
+{
+	return inPortal[0]->GetFName().ToString();
 }

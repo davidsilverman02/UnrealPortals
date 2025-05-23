@@ -26,6 +26,13 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 	UNREALPORTALS_API UClass* Z_Construct_UClass_APortal_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_UnrealPortals();
 // End Cross Module References
+	DEFINE_FUNCTION(APortal::execgetObj)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(FString*)Z_Param__Result=P_THIS->getObj();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(APortal::execgetPee)
 	{
 		P_GET_UBOOL(Z_Param_penum);
@@ -141,6 +148,7 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		UClass* Class = APortal::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "cameraRotation", &APortal::execcameraRotation },
+			{ "getObj", &APortal::execgetObj },
 			{ "getPee", &APortal::execgetPee },
 			{ "getViewport", &APortal::execgetViewport },
 			{ "initializeMaterials", &APortal::execinitializeMaterials },
@@ -181,6 +189,40 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APortal_cameraRotation_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_APortal_getObj_Statics
+	{
+		struct Portal_eventgetObj_Parms
+		{
+			FString ReturnValue;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_APortal_getObj_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(Portal_eventgetObj_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APortal_getObj_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APortal_getObj_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APortal_getObj_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Portal.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APortal_getObj_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APortal, nullptr, "getObj", nullptr, nullptr, Z_Construct_UFunction_APortal_getObj_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_getObj_Statics::PropPointers), sizeof(Z_Construct_UFunction_APortal_getObj_Statics::Portal_eventgetObj_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_getObj_Statics::Function_MetaDataParams), Z_Construct_UFunction_APortal_getObj_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_getObj_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_APortal_getObj_Statics::Portal_eventgetObj_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_APortal_getObj()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APortal_getObj_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -713,6 +755,7 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_APortal_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_APortal_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_APortal_cameraRotation, "cameraRotation" }, // 1505786413
+		{ &Z_Construct_UFunction_APortal_getObj, "getObj" }, // 3774687617
 		{ &Z_Construct_UFunction_APortal_getPee, "getPee" }, // 3973786205
 		{ &Z_Construct_UFunction_APortal_getViewport, "getViewport" }, // 1670365476
 		{ &Z_Construct_UFunction_APortal_initializeMaterials, "initializeMaterials" }, // 683769587
@@ -975,9 +1018,9 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APortal, APortal::StaticClass, TEXT("APortal"), &Z_Registration_Info_UClass_APortal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortal), 4186345680U) },
+		{ Z_Construct_UClass_APortal, APortal::StaticClass, TEXT("APortal"), &Z_Registration_Info_UClass_APortal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortal), 339043187U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_3198276589(TEXT("/Script/UnrealPortals"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_2217293433(TEXT("/Script/UnrealPortals"),
 		Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

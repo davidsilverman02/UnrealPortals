@@ -228,6 +228,9 @@ public:
 	UFUNCTION(BlueprintCallable)
 	int getPee(bool penum);
 
+	UFUNCTION(BlueprintCallable)
+	FString getObj();
+
 
 	//UFUNCTION(BlueprintCallable)
 	//void teleportActor(AActor* teleported);

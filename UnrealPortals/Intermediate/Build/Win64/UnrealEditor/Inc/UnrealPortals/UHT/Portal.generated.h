@@ -20,6 +20,7 @@ class UMaterial;
 #define FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_40_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execgetObj); \
 	DECLARE_FUNCTION(execgetPee); \
 	DECLARE_FUNCTION(execrunTeleportation); \
 	DECLARE_FUNCTION(execcameraRotation); \
