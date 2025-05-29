@@ -106,9 +106,17 @@ public:
 	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
 	UTextureRenderTarget2D* rendTarg;
 
+	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
 	TArray<AActor*> inPortal;
 
+	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
 	TArray<AActor*> inNearby;
+
+	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
+	TArray<UPortalObjectComponent*> portalItems;
+
+	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
+	TArray<UPortalObjectComponent*> nearbyItems;
 	
 	// the bool for the function
 	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
@@ -231,6 +239,8 @@ public:
 	UFUNCTION(BlueprintCallable)
 	FString getObj();
 
+	UFUNCTION(BlueprintImplementableEvent)
+	void getPortalItems();
 
 	//UFUNCTION(BlueprintCallable)
 	//void teleportActor(AActor* teleported);

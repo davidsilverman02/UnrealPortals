@@ -635,19 +635,18 @@ void APortal::runTeleportation()
 {
 	// convert the blueprints you made here
 
-
-
 	// in the future, filter for unreal portal objs
 	
-	playerNearbyBox->GetOverlappingActors(inNearby, TSubclassOf<AUnrealPortalsCharacter>());
+	//playerNearbyBox->GetOverlappingActors(inNearby, TSubclassOf<AUnrealPortalsCharacter>());
 
-	teleportBox->GetOverlappingActors(inPortal, TSubclassOf<AUnrealPortalsCharacter>());
-	
+	//teleportBox->GetOverlappingActors(inPortal, TSubclassOf<AUnrealPortalsCharacter>());
 
 	// meant to make sure this isn't in the check
 	//inNearby.Remove(this);
 
 	//inPortal.Remove(this);
+
+	getPortalItems();
 
 	yelli();
 

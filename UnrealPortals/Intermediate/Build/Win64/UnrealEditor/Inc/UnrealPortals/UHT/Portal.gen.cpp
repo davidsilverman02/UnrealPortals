@@ -128,6 +128,11 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		*(FVector2D*)Z_Param__Result=P_THIS->getViewport();
 		P_NATIVE_END;
 	}
+	static FName NAME_APortal_getPortalItems = FName(TEXT("getPortalItems"));
+	void APortal::getPortalItems()
+	{
+		ProcessEvent(FindFunctionChecked(NAME_APortal_getPortalItems),NULL);
+	}
 	static FName NAME_APortal_isntPortOb = FName(TEXT("isntPortOb"));
 	void APortal::isntPortOb()
 	{
@@ -266,6 +271,28 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APortal_getPee_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_APortal_getPortalItems_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APortal_getPortalItems_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Portal.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APortal_getPortalItems_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APortal, nullptr, "getPortalItems", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APortal_getPortalItems_Statics::Function_MetaDataParams), Z_Construct_UFunction_APortal_getPortalItems_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UFunction_APortal_getPortalItems()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APortal_getPortalItems_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -757,6 +784,7 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		{ &Z_Construct_UFunction_APortal_cameraRotation, "cameraRotation" }, // 1505786413
 		{ &Z_Construct_UFunction_APortal_getObj, "getObj" }, // 3774687617
 		{ &Z_Construct_UFunction_APortal_getPee, "getPee" }, // 3973786205
+		{ &Z_Construct_UFunction_APortal_getPortalItems, "getPortalItems" }, // 728143815
 		{ &Z_Construct_UFunction_APortal_getViewport, "getViewport" }, // 1670365476
 		{ &Z_Construct_UFunction_APortal_initializeMaterials, "initializeMaterials" }, // 683769587
 		{ &Z_Construct_UFunction_APortal_isntPortOb, "isntPortOb" }, // 1934380805
@@ -1018,9 +1046,9 @@ void EmptyLinkFunctionForGeneratedCodePortal() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APortal, APortal::StaticClass, TEXT("APortal"), &Z_Registration_Info_UClass_APortal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortal), 339043187U) },
+		{ Z_Construct_UClass_APortal, APortal::StaticClass, TEXT("APortal"), &Z_Registration_Info_UClass_APortal, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APortal), 2531739868U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_2217293433(TEXT("/Script/UnrealPortals"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_2942759728(TEXT("/Script/UnrealPortals"),
 		Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_david_silverman_source_UnrealPortals_UnrealPortals_Source_UnrealPortals_Portal_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
