@@ -633,26 +633,28 @@ void APortal::cameraRotation()
 
 void APortal::runTeleportation()
 {
-	// convert the blueprints you made here
+	// gets a raw sample of all items considered nearby to the portal and in the portal
+	playerNearbyBox->GetOverlappingActors(inNearby, TSubclassOf<AActor>());
 
-	// in the future, filter for unreal portal objs
-	
-	//playerNearbyBox->GetOverlappingActors(inNearby, TSubclassOf<AUnrealPortalsCharacter>());
+	teleportBox->GetOverlappingActors(inPortal, TSubclassOf<AActor>());
 
-	//teleportBox->GetOverlappingActors(inPortal, TSubclassOf<AUnrealPortalsCharacter>());
 
-	// meant to make sure this isn't in the check
-	//inNearby.Remove(this);
+	for (int i = 0; i < inNearby.Num(); i++)
+	{
+		if(IsValid(inNearby[i]->GetComponentByClass<UPortalObjectComponent>()))
+	}
 
-	//inPortal.Remove(this);
+	for (int i = 0; i < inPortal.Num(); i++)
+	{
 
-	getPortalItems();
+	}
 
 	yelli();
 
-	if (inNearby[0])
+	/*
+	if (nearbyItems[0])
 	{
-		if (inPortal[0])
+		if (portalItems[0])
 		{
 			// this will check the player's crossing,
 
@@ -670,6 +672,8 @@ void APortal::runTeleportation()
 		
 		nearbySync();
 	}
+
+	*/
 
 	cameraRotation();
 }

@@ -113,10 +113,10 @@ public:
 	TArray<AActor*> inNearby;
 
 	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
-	TArray<UPortalObjectComponent*> portalItems;
+	TArray<AActor*> portalItems;
 
 	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
-	TArray<UPortalObjectComponent*> nearbyItems;
+	TArray<AActor*> nearbyItems;
 	
 	// the bool for the function
 	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
