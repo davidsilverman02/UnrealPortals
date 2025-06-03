@@ -633,47 +633,63 @@ void APortal::cameraRotation()
 
 void APortal::runTeleportation()
 {
+	// cleans out the list of objects in the portal
+
+	nearbyItems.Empty();
+
+	portalItems.Empty();
+
 	// gets a raw sample of all items considered nearby to the portal and in the portal
 	playerNearbyBox->GetOverlappingActors(inNearby, TSubclassOf<AActor>());
 
 	teleportBox->GetOverlappingActors(inPortal, TSubclassOf<AActor>());
 
 
+	// converts the raw sample into the actors that specifically contain the portal object component
 	for (int i = 0; i < inNearby.Num(); i++)
 	{
-		if(IsValid(inNearby[i]->GetComponentByClass<UPortalObjectComponent>()))
+		if (IsValid(inNearby[i]->GetComponentByClass<UPortalObjectComponent>()))
+			nearbyItems.Add(inNearby[i]);
 	}
 
 	for (int i = 0; i < inPortal.Num(); i++)
 	{
-
+		if (IsValid(inPortal[i]->GetComponentByClass<UPortalObjectComponent>()))
+			portalItems.Add(inPortal[i]);
 	}
 
 	yelli();
 
-	/*
-	if (nearbyItems[0])
+	
+	// this currently looks in the actions of charactera
+
+	if (IsValid(nearbyItems[0]))
 	{
-		if (portalItems[0])
+		if (IsValid(portalItems[0]))
 		{
 			// this will check the player's crossing,
 
 			// this specifically moves the player
+
+			// Make some edits so it affects other characters
 
 			if (isPointCrossing(UGameplayStatics::GetPlayerCharacter(GetWorld(), 0)->GetActorLocation()))
 			{
 				movePlayer();
 				teleSync();
 			}
-
+			else
+			{
+				nearbySync();
+			}
+		}
+		else
+		{
 			nearbySync();
 		}
-		
-		
-		nearbySync();
 	}
 
-	*/
+	
 
 	cameraRotation();
 }
@@ -682,11 +698,11 @@ int APortal::getPee(bool penum)
 {
 	if (penum)
 	{
-		return inPortal.Num();
+		return portalItems.Num();
 	}
 	else
 	{
-		return inNearby.Num();
+		return nearbyItems.Num();
 	}
 }
 
