@@ -586,6 +586,20 @@ void APortal::teleportActor(AActor* teleported)
 }
 */
 
+void APortal::cameraAntiClip()
+{
+	// this function prevents clipping in the camera when things pass
+
+	// sees if the camera is in between certain distances
+
+	float cameraNear = FVector::DotProduct(ForwardArrow->GetForwardVector(), playCam->GetComponentLocation() - this->GetActorLocation());
+
+	if (cameraNear < 200.0 && cameraNear > -5.0)
+	{
+
+	}
+}
+
 void APortal::movePlayer()
 {
 	// Gets the original velocity of the entering object
@@ -658,14 +672,11 @@ void APortal::runTeleportation()
 			portalItems.Add(inPortal[i]);
 	}
 
-	yelli();
+	// has objects move around 
 
-	
-	// this currently looks in the actions of charactera
-
-	if (IsValid(nearbyItems[0]))
+	if (nearbyItems.Num() >= 1)
 	{
-		if (IsValid(portalItems[0]))
+		if (portalItems.Num() >= 1)
 		{
 			// this will check the player's crossing,
 

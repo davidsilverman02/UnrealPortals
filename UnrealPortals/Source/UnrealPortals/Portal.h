@@ -223,6 +223,9 @@ public:
 	UFUNCTION(BlueprintImplementableEvent)
 	void isntPortOb();
 
+	UFUNCTION(BlueprintCallable)
+	void cameraAntiClip();
+
 	// This moves the player, will be replaced with a more permanent solution
 	UFUNCTION(BlueprintCallable)
 	void movePlayer();
