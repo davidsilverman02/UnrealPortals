@@ -35,6 +35,7 @@
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
 "C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealPortalsEditor\Development\Engine\SharedPCH.Engine.Cpp17.h.obj"
+"C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\MirrorCharacter.gen.cpp.obj"
 "C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\Portal.gen.cpp.obj"
 "C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\PortalObjectComponent.gen.cpp.obj"
 "C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealPortals.init.gen.cpp.obj"
@@ -44,6 +45,7 @@
 "C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealPortals.cpp.obj"
 "C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealPortalsCharacter.cpp.obj"
 "C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\UnrealPortalsGameMode.cpp.obj"
+"C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\MirrorCharacter.cpp.obj"
 "C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\Portal.cpp.obj"
 "C:\Users\david.silverman\source\UnrealPortals\UnrealPortals\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealPortals\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"

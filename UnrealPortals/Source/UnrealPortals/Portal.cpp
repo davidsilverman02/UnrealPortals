@@ -42,6 +42,8 @@ void APortal::BeginPlay()
 
 	Super::BeginPlay();
 
+	shiftedLocation = FVector(shiftDegree, defaultRelativePortalLocation.Y, defaultRelativePortalLocation.Z);
+
 	// set portal material and initialize materials
 }
 
@@ -49,6 +51,8 @@ void APortal::BeginPlay()
 void APortal::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	cameraAntiClip();
 
 	updateCapture();
 
@@ -594,9 +598,17 @@ void APortal::cameraAntiClip()
 
 	float cameraNear = FVector::DotProduct(ForwardArrow->GetForwardVector(), playCam->GetComponentLocation() - this->GetActorLocation());
 
-	if (cameraNear < 200.0 && cameraNear > -5.0)
-	{
+	//float clipShift = FMath::Clamp(((1.0 - (cameraNear / 50.0)) * shiftDegree), shiftDegree, 0.0);
 
+	shiftedLocation.X = FMath::Clamp(((1.0 - (cameraNear / 50.0)) * shiftDegree), shiftDegree, 0.0);
+
+	if (cameraNear < 200.0 && cameraNear > shiftDegree)
+	{
+		portalCollider->SetRelativeLocation(shiftedLocation);
+	}
+	else
+	{
+		portalCollider->SetRelativeLocation(defaultRelativePortalLocation);
 	}
 }
 

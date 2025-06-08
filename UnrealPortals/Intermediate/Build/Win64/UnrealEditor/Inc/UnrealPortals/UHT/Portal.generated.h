@@ -25,6 +25,7 @@ class UMaterial;
 	DECLARE_FUNCTION(execrunTeleportation); \
 	DECLARE_FUNCTION(execcameraRotation); \
 	DECLARE_FUNCTION(execmovePlayer); \
+	DECLARE_FUNCTION(execcameraAntiClip); \
 	DECLARE_FUNCTION(execinitializeMaterials); \
 	DECLARE_FUNCTION(execsetPortalMaterial); \
 	DECLARE_FUNCTION(execmoveItems); \

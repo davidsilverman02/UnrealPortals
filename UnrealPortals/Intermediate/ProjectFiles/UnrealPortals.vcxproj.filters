@@ -33,6 +33,12 @@
     <Filter Include="Source\UnrealPortals">
       <UniqueIdentifier>{59A18633-25E7-3427-B4C8-F0984902589B}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\UnrealPortals\MirrorCharacter.cpp">
+      <Filter>Source\UnrealPortals</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealPortals\MirrorCharacter.h">
+      <Filter>Source\UnrealPortals</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\UnrealPortals\Portal.cpp">
       <Filter>Source\UnrealPortals</Filter>
     </ClCompile>

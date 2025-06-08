@@ -101,11 +101,19 @@ public:
 	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
 	float portalCamDist = 1000.0f;
 
+	UPROPERTY(EditAnywhere, Category = "PortalData")
+	float shiftDegree = -5.0f;
+
 	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
 	UMaterialInstanceDynamic* portalMatter;
 
 	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
 	UTextureRenderTarget2D* rendTarg;
+
+	UPROPERTY(EditAnywhere, Category = "PortalData")
+	FVector defaultRelativePortalLocation;
+
+	FVector shiftedLocation;
 
 	UPROPERTY(BlueprintReadWrite, Category = "PortalData")
 	TArray<AActor*> inPortal;
