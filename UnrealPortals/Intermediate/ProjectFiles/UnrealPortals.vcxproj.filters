@@ -39,6 +39,12 @@
     <ClInclude Include="..\..\Source\UnrealPortals\MirrorCharacter.h">
       <Filter>Source\UnrealPortals</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\UnrealPortals\MyAnimInstance.cpp">
+      <Filter>Source\UnrealPortals</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UnrealPortals\MyAnimInstance.h">
+      <Filter>Source\UnrealPortals</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\UnrealPortals\Portal.cpp">
       <Filter>Source\UnrealPortals</Filter>
     </ClCompile>
