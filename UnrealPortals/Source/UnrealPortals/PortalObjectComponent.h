@@ -47,15 +47,11 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "OnTeleport"))
 	void OnTeleport(FTransform fromPortal, FTransform toPortal, FVector3f pos, FRotator rot);
 
-	virtual void PortalEnterStart();
+	UFUNCTION(BlueprintCallable)
+	void PortalEnterStart();
 
-	UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "OnPortalEnterStart"))
-	void OnPortalEnterStart();
-
-	virtual void PortalExitStart();
-
-	UFUNCTION(BlueprintImplementableEvent, meta = (DisplayName = "OnPortalExitStart"))
-	void OnPortalExitStart();
+	UFUNCTION(BlueprintCallable)
+	void PortalExitStart();
 
 	// The getter and setter functions for isPlayer
 

@@ -46,20 +46,11 @@ void UPortalObjectComponent::PortalEnterStart()
 
 }
 
-//void UPortalObjectComponent::OnPortalEnterStart()
-//{
-//	PortalEnterStart();
-//}
 
 void UPortalObjectComponent::PortalExitStart()
 {
 
 }
-
-//void UPortalObjectComponent::OnPortalExitStart()
-//{
-//	PortalExitStart();
-//}
 
 bool UPortalObjectComponent::getIsPlayer()
 {

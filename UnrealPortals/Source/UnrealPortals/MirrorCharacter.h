@@ -15,7 +15,7 @@ public:
 	// Sets default values for this character's properties
 	AMirrorCharacter();
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	ACharacter* original;
 
 protected:
