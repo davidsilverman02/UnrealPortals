@@ -254,6 +254,11 @@ public:
 	UFUNCTION(BlueprintImplementableEvent)
 	void getPortalItems();
 
+	// Made as an override in code for overlap beginning and ending
+	void portalBeginOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	void portalEndOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+
 	//UFUNCTION(BlueprintCallable)
 	//void teleportActor(AActor* teleported);
 };
