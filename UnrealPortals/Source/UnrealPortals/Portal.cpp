@@ -28,6 +28,10 @@ APortal::APortal()
 	teleportBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Teleport Collider"));
 	teleportBox->SetupAttachment(defaultComp);
 
+	// links teleport box to a new function regarding begin overlap
+	teleportBox->OnComponentBeginOverlap.AddDynamic(this, &APortal::portalBeginOverlap);
+	teleportBox->OnComponentEndOverlap.AddDynamic(this, &APortal::portalEndOverlap);
+
 	playerNearbyBox = CreateDefaultSubobject<UBoxComponent>(TEXT("Nearby Collider"));
 	playerNearbyBox->SetupAttachment(defaultComp);
 
